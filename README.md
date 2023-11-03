@@ -61,25 +61,22 @@ Si deseas probar nuestro e-commerce en tu entorno local, sigue estos pasos:
 1. Clona el repositorio:
    ```bash
    git clone URL_DEL_REPO
-   ```
    
 2. Navega al directorio principal del proyecto:
-  ```bash
-  cd NOMBRE_DEL_PROYECTO
-  ```
+   ```bash
+   cd NOMBRE_DEL_PROYECTO
+
 3. Instala las dependencias utilizando pnpm (asegúrate de tener pnpm instalado previamente):
 
-  ```bash
-  pnpm install
-  ```
+   ```bash
+   pnpm install
 
 4. Configura las variables de entorno necesarias en un archivo .env. Puedes encontrar un ejemplo de configuración en el archivo .env.example. Asegúrate de proporcionar valores válidos para las variables.
 
 5. Inicia el servidor de desarrollo:
 
-  ```bash
-  pnpm run dev
-  ```
+   ```bash
+   pnpm run dev
 
 6. El servidor de desarrollo estará disponible en http://localhost:3000. Puedes acceder a la plataforma desde tu navegador web.
 
