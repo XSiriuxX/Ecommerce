@@ -1,0 +1,1331 @@
+[
+  {
+    "productName": "Remera de Algodón",
+    "productDescription": "Remera de algodón de alta calidad",
+    "stockQuantity": 100,
+    "productPrice": 19.99,
+    "categories": ["Remeras"],
+    "productImage": "imagen_remera.jpg",
+    "manufacturer": "Fabricante A",
+    "modelNumber": "12345",
+    "weightAndDimensions": {
+      "weight": 0.3,
+      "dimensions": {
+        "length": 70,
+        "width": 50,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["moda", "algodón", "rebajas"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Chaqueta de Cuero",
+    "productDescription": "Chaqueta de cuero genuino para hombres.",
+    "stockQuantity": 50,
+    "productPrice": 149.99,
+    "categories": ["Chaquetas"],
+    "productImage": "imagen_chaqueta.jpg",
+    "manufacturer": "Fabricante B",
+    "modelNumber": "7890",
+    "weightAndDimensions": {
+      "weight": 1.5,
+      "dimensions": {
+        "length": 60,
+        "width": 40,
+        "height": 10
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["cuero", "moda masculina", "rebajas"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Pantalones Vaqueros",
+    "productDescription": "Pantalones vaqueros de estilo informal para hombres.",
+    "stockQuantity": 75,
+    "productPrice": 49.99,
+    "categories": ["Pantalones", "Vaqueros"],
+    "productImage": "imagen_pantalones.jpg",
+    "manufacturer": "Fabricante C",
+    "modelNumber": "54321",
+    "weightAndDimensions": {
+      "weight": 1.2,
+      "dimensions": {
+        "length": 65,
+        "width": 45,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["informal", "moda masculina", "rebajas"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Remera de Algodón",
+    "productDescription": "Remera de algodón de alta calidad",
+    "stockQuantity": 100,
+    "productPrice": 19.99,
+    "categories": ["Remeras"],
+    "productImage": "imagen_remera.jpg",
+    "manufacturer": "Fabricante A",
+    "modelNumber": "12345",
+    "weightAndDimensions": {
+      "weight": 0.3,
+      "dimensions": {
+        "length": 70,
+        "width": 50,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["moda", "algodón", "rebajas"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Pantalón Casual",
+    "productDescription": "Pantalón casual para hombres, cómodo y versátil.",
+    "stockQuantity": 80,
+    "productPrice": 49.99,
+    "categories": ["Pantalones"],
+    "productImage": "imagen_pantalon.jpg",
+    "manufacturer": "Fabricante B",
+    "modelNumber": "23456",
+    "weightAndDimensions": {
+      "weight": 0.5,
+      "dimensions": {
+        "length": 80,
+        "width": 60,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "casual",
+      "versátil",
+      "moda masculina",
+      "ropa cómoda",
+      "rebajas"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Camisa Elegante",
+    "productDescription": "Camisa elegante para hombres, ideal para ocasiones especiales.",
+    "stockQuantity": 40,
+    "productPrice": 59.99,
+    "categories": ["Camisas", "Trajes"],
+    "productImage": "imagen_camisa.jpg",
+    "manufacturer": "Fabricante C",
+    "modelNumber": "34567",
+    "weightAndDimensions": {
+      "weight": 0.4,
+      "dimensions": {
+        "length": 75,
+        "width": 55,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "elegante",
+      "ocasiones especiales",
+      "moda masculina",
+      "vestir",
+      "prendas formales"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Zapatillas Deportivas",
+    "productDescription": "Zapatillas deportivas para hombres ideales para correr y entrenar.",
+    "stockQuantity": 60,
+    "productPrice": 79.99,
+    "categories": ["Calzado", "Ropa Deportiva"],
+    "productImage": "imagen_zapatillas.jpg",
+    "manufacturer": "Fabricante D",
+    "modelNumber": "45678",
+    "weightAndDimensions": {
+      "weight": 0.6,
+      "dimensions": {
+        "length": 30,
+        "width": 20,
+        "height": 10
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["deportivas", "entrenamiento", "running", "moda", "calzado"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Gafas de Sol Clásicas",
+    "productDescription": "Gafas de sol clásicas y elegantes para hombres.",
+    "stockQuantity": 30,
+    "productPrice": 39.99,
+    "categories": ["Gafas de Sol", "Accesorios"],
+    "productImage": "imagen_gafas.jpg",
+    "manufacturer": "Fabricante E",
+    "modelNumber": "56789",
+    "weightAndDimensions": {
+      "weight": 0.3,
+      "dimensions": {
+        "length": 15,
+        "width": 5,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "clásicas",
+      "elegantes",
+      "protección solar",
+      "moda",
+      "accesorios masculinos"
+    ],
+    "variantOptions": []
+  },
+  {
+    "productName": "Pantalón Vaquero",
+    "productDescription": "Pantalón vaquero resistente y moderno para hombres.",
+    "stockQuantity": 70,
+    "productPrice": 54.99,
+    "categories": ["Vaqueros"],
+    "productImage": "imagen_vaquero.jpg",
+    "manufacturer": "Fabricante F",
+    "modelNumber": "67890",
+    "weightAndDimensions": {
+      "weight": 0.7,
+      "dimensions": {
+        "length": 85,
+        "width": 65,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["resistente", "modernos", "jeans", "ropa casual", "rebajas"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Traje Formal",
+    "productDescription": "Traje formal y elegante para hombres, perfecto para ocasiones especiales.",
+    "stockQuantity": 45,
+    "productPrice": 99.99,
+    "categories": ["Trajes"],
+    "productImage": "imagen_traje.jpg",
+    "manufacturer": "Fabricante G",
+    "modelNumber": "78901",
+    "weightAndDimensions": {
+      "weight": 1.0,
+      "dimensions": {
+        "length": 80,
+        "width": 60,
+        "height": 10
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "formal",
+      "elegante",
+      "ocasiones especiales",
+      "moda masculina",
+      "vestir"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Bermudas Casuales",
+    "productDescription": "Bermudas casuales para hombres, perfectas para el verano.",
+    "stockQuantity": 55,
+    "productPrice": 29.99,
+    "categories": ["Bermudas", "Ropa de Hombres"],
+    "productImage": "imagen_bermudas.jpg",
+    "manufacturer": "Fabricante H",
+    "modelNumber": "89012",
+    "weightAndDimensions": {
+      "weight": 0.4,
+      "dimensions": {
+        "length": 70,
+        "width": 55,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "casuales",
+      "verano",
+      "moda masculina",
+      "ropa ligera",
+      "rebajas"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Shorts Deportivos",
+    "productDescription": "Shorts deportivos para hombres, ideales para el gimnasio y el entrenamiento.",
+    "stockQuantity": 65,
+    "productPrice": 24.99,
+    "categories": ["Ropa Deportiva"],
+    "productImage": "imagen_shorts.jpg",
+    "manufacturer": "Fabricante I",
+    "modelNumber": "90123",
+    "weightAndDimensions": {
+      "weight": 0.3,
+      "dimensions": {
+        "length": 45,
+        "width": 35,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "deportivos",
+      "entrenamiento",
+      "fitness",
+      "moda",
+      "ropa deportiva"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Botas de Cuero",
+    "productDescription": "Botas de cuero de alta calidad para hombres, ideales para el invierno.",
+    "stockQuantity": 35,
+    "productPrice": 89.99,
+    "categories": ["Botas", "Ropa de Hombres"],
+    "productImage": "imagen_botas.jpg",
+    "manufacturer": "Fabricante J",
+    "modelNumber": "12345",
+    "weightAndDimensions": {
+      "weight": 0.8,
+      "dimensions": {
+        "length": 75,
+        "width": 45,
+        "height": 15
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "cuero",
+      "invierno",
+      "calidad",
+      "calzado resistente",
+      "rebajas"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Chaqueta de Invierno Resistente al Agua",
+    "productDescription": "Chaqueta de invierno resistente al agua para hombres.",
+    "stockQuantity": 45,
+    "productPrice": 89.99,
+    "categories": ["Chaquetas", "Ropa de Hombres"],
+    "productImage": "imagen_chaqueta_invierno.jpg",
+    "manufacturer": "OutdoorGear",
+    "modelNumber": "CIW3001",
+    "weightAndDimensions": {
+      "weight": 1.2,
+      "dimensions": {
+        "length": 75,
+        "width": 55,
+        "height": 10
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "invierno",
+      "resistente al agua",
+      "moda masculina",
+      "abrigo",
+      "aventura"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Pantalones de Vestir Elegantes",
+    "productDescription": "Pantalones de vestir elegantes para hombres.",
+    "stockQuantity": 55,
+    "productPrice": 69.99,
+    "categories": ["Pantalones", "Trajes"],
+    "productImage": "imagen_pantalones_elegantes.jpg",
+    "manufacturer": "EleganceCo",
+    "modelNumber": "PVE4002",
+    "weightAndDimensions": {
+      "weight": 0.7,
+      "dimensions": {
+        "length": 65,
+        "width": 45,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["vestir", "elegantes", "moda masculina", "estilo", "formal"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Reloj de Pulsera Clásico",
+    "productDescription": "Reloj de pulsera clásico para hombres.",
+    "stockQuantity": 70,
+    "productPrice": 59.99,
+    "categories": ["Accesorios", "Ropa de Hombres"],
+    "productImage": "imagen_reloj.jpg",
+    "manufacturer": "TimeMasters",
+    "modelNumber": "RW5003",
+    "weightAndDimensions": {
+      "weight": 0.2,
+      "dimensions": {
+        "length": 40,
+        "width": 40,
+        "height": 10
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "reloj",
+      "clásico",
+      "accesorios masculinos",
+      "estilo",
+      "moda"
+    ],
+    "variantOptions": []
+  },
+  {
+    "productName": "Bermudas de Verano",
+    "productDescription": "Bermudas de verano para hombres, ideales para días soleados.",
+    "stockQuantity": 65,
+    "productPrice": 39.99,
+    "categories": ["Bermudas", "Ropa de Hombres"],
+    "productImage": "imagen_bermudas_verano.jpg",
+    "manufacturer": "SummerStyle",
+    "modelNumber": "BV6004",
+    "weightAndDimensions": {
+      "weight": 0.4,
+      "dimensions": {
+        "length": 45,
+        "width": 35,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "verano",
+      "casuales",
+      "moda masculina",
+      "ropa ligera",
+      "rebajas"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Zapatos de Cuero Clásicos",
+    "productDescription": "Zapatos de cuero clásicos para hombres, ideales para ocasiones formales.",
+    "stockQuantity": 40,
+    "productPrice": 89.99,
+    "categories": ["Calzado", "Ropa de Hombres"],
+    "productImage": "imagen_zapatos_cuero.jpg",
+    "manufacturer": "EleganceShoes",
+    "modelNumber": "ZC7005",
+    "weightAndDimensions": {
+      "weight": 0.9,
+      "dimensions": {
+        "length": 30,
+        "width": 10,
+        "height": 20
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "cuero",
+      "elegantes",
+      "moda masculina",
+      "formales",
+      "calzado"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Gorra de Béisbol",
+    "productDescription": "Gorra de béisbol para hombres, ideal para protegerse del sol.",
+    "stockQuantity": 80,
+    "productPrice": 19.99,
+    "categories": ["Accesorios", "Ropa de Hombres"],
+    "productImage": "imagen_gorra.jpg",
+    "manufacturer": "SportGear",
+    "modelNumber": "GB8006",
+    "weightAndDimensions": {
+      "weight": 0.2,
+      "dimensions": {
+        "length": 20,
+        "width": 15,
+        "height": 10
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "béisbol",
+      "protección solar",
+      "accesorios masculinos",
+      "deportes",
+      "estilo"
+    ],
+    "variantOptions": []
+  },
+  {
+    "productName": "Calcetines de Colores",
+    "productDescription": "Calcetines de colores para hombres, cómodos y con estilo.",
+    "stockQuantity": 90,
+    "productPrice": 9.99,
+    "categories": ["Calcetines", "Ropa de Hombres"],
+    "productImage": "imagen_calcetines.jpg",
+    "manufacturer": "ColorSocks",
+    "modelNumber": "CC9007",
+    "weightAndDimensions": {
+      "weight": 0.1,
+      "dimensions": {
+        "length": 10,
+        "width": 5,
+        "height": 2
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "colores",
+      "cómodos",
+      "accesorios masculinos",
+      "moda",
+      "rebajas"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Traje de Negocios",
+    "productDescription": "Traje de negocios para hombres, elegante y profesional.",
+    "stockQuantity": 70,
+    "productPrice": 149.99,
+    "categories": ["Trajes", "Ropa de Hombres"],
+    "productImage": "imagen_traje.jpg",
+    "manufacturer": "BusinessStyle",
+    "modelNumber": "TN1008",
+    "weightAndDimensions": {
+      "weight": 1.0,
+      "dimensions": {
+        "length": 75,
+        "width": 60,
+        "height": 10
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "negocios",
+      "profesional",
+      "elegante",
+      "moda masculina",
+      "formal"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Pulsera de Cuero",
+    "productDescription": "Pulsera de cuero para hombres, un accesorio de moda elegante.",
+    "stockQuantity": 85,
+    "productPrice": 14.99,
+    "categories": ["Accesorios", "Ropa de Hombres"],
+    "productImage": "imagen_pulsera.jpg",
+    "manufacturer": "FashionAccessories",
+    "modelNumber": "PC1109",
+    "weightAndDimensions": {
+      "weight": 0.05,
+      "dimensions": {
+        "length": 20,
+        "width": 2,
+        "height": 0.5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "cuero",
+      "elegante",
+      "accesorios masculinos",
+      "estilo",
+      "moda"
+    ],
+    "variantOptions": []
+  },
+  {
+    "productName": "Zapatos Deportivos para Correr",
+    "productDescription": "Zapatos deportivos de alta calidad para correr.",
+    "stockQuantity": 60,
+    "productPrice": 69.99,
+    "categories": ["Calzado", "Ropa Deportiva"],
+    "productImage": "imagen_zapatos_correr.jpg",
+    "manufacturer": "RunnersGear",
+    "modelNumber": "ZDC2001",
+    "weightAndDimensions": {
+      "weight": 0.6,
+      "dimensions": {
+        "length": 30,
+        "width": 12,
+        "height": 9
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "deporte",
+      "correr",
+      "moda deportiva",
+      "atletismo",
+      "entrenamiento"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Sudadera con Capucha",
+    "productDescription": "Sudadera con capucha para hombres, ideal para el invierno.",
+    "stockQuantity": 50,
+    "productPrice": 49.99,
+    "categories": ["Sudaderas", "Ropa de Hombres"],
+    "productImage": "imagen_sudadera.jpg",
+    "manufacturer": "WarmStyle",
+    "modelNumber": "SC8002",
+    "weightAndDimensions": {
+      "weight": 0.8,
+      "dimensions": {
+        "length": 70,
+        "width": 55,
+        "height": 8
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "invierno",
+      "sudadera",
+      "moda masculina",
+      "abrigo",
+      "capucha"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Gafas de Sol Polarizadas",
+    "productDescription": "Gafas de sol polarizadas para hombres, protección UV de alta calidad.",
+    "stockQuantity": 70,
+    "productPrice": 29.99,
+    "categories": ["Gafas de Sol", "Accesorios"],
+    "productImage": "imagen_gafas_sol.jpg",
+    "manufacturer": "SunGuard",
+    "modelNumber": "GS9003",
+    "weightAndDimensions": {
+      "weight": 0.1,
+      "dimensions": {
+        "length": 15,
+        "width": 5,
+        "height": 3
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "protección solar",
+      "estilo",
+      "accesorios masculinos",
+      "verano",
+      "moda"
+    ],
+    "variantOptions": []
+  },
+  {
+    "productName": "Jeans Slim Fit",
+    "productDescription": "Jeans slim fit para hombres, cómodos y elegantes.",
+    "stockQuantity": 65,
+    "productPrice": 59.99,
+    "categories": ["Vaqueros", "Ropa de Hombres"],
+    "productImage": "imagen_jeans_slim.jpg",
+    "manufacturer": "SlimFitCo",
+    "modelNumber": "JSF3004",
+    "weightAndDimensions": {
+      "weight": 0.7,
+      "dimensions": {
+        "length": 60,
+        "width": 50,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "jeans",
+      "slim fit",
+      "moda masculina",
+      "elegantes",
+      "casuales"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Saco Elegante",
+    "productDescription": "Saco elegante para hombres, perfecto para ocasiones formales.",
+    "stockQuantity": 40,
+    "productPrice": 79.99,
+    "categories": ["Chaquetas", "Trajes"],
+    "productImage": "imagen_saco_elegante.jpg",
+    "manufacturer": "ElegantWear",
+    "modelNumber": "SE4005",
+    "weightAndDimensions": {
+      "weight": 1.2,
+      "dimensions": {
+        "length": 70,
+        "width": 60,
+        "height": 10
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["saco", "elegante", "moda masculina", "formales", "vestir"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Reloj Deportivo Digital",
+    "productDescription": "Reloj deportivo digital para hombres, resistente al agua y duradero.",
+    "stockQuantity": 55,
+    "productPrice": 39.99,
+    "categories": ["Accesorios", "Ropa Deportiva"],
+    "productImage": "imagen_reloj_deportivo.jpg",
+    "manufacturer": "SportWatch",
+    "modelNumber": "RD5006",
+    "weightAndDimensions": {
+      "weight": 0.15,
+      "dimensions": {
+        "length": 25,
+        "width": 5,
+        "height": 2
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "deporte",
+      "reloj digital",
+      "accesorios masculinos",
+      "resistente al agua",
+      "duradero"
+    ],
+    "variantOptions": []
+  },
+  {
+    "productName": "Sudadera sin Capucha",
+    "productDescription": "Sudadera sin capucha para hombres, perfecta para la entretiempo.",
+    "stockQuantity": 45,
+    "productPrice": 44.99,
+    "categories": ["Sudaderas", "Ropa de Hombres"],
+    "productImage": "imagen_sudadera_sin_capucha.jpg",
+    "manufacturer": "CasualStyle",
+    "modelNumber": "SSC7007",
+    "weightAndDimensions": {
+      "weight": 0.7,
+      "dimensions": {
+        "length": 65,
+        "width": 55,
+        "height": 7
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "entretiempo",
+      "sudadera",
+      "moda masculina",
+      "casual",
+      "comodidad"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Reloj de Lujo",
+    "productDescription": "Reloj de lujo para hombres, elegante y sofisticado.",
+    "stockQuantity": 30,
+    "productPrice": 129.99,
+    "categories": ["Accesorios", "Ropa de Hombres"],
+    "productImage": "imagen_reloj_lujo.jpg",
+    "manufacturer": "LuxuryTime",
+    "modelNumber": "RL3008",
+    "weightAndDimensions": {
+      "weight": 0.2,
+      "dimensions": {
+        "length": 30,
+        "width": 5,
+        "height": 1
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "lujo",
+      "reloj elegante",
+      "accesorios masculinos",
+      "sofisticado",
+      "estilo"
+    ],
+    "variantOptions": []
+  },
+  {
+    "productName": "Zapatillas Urbanas",
+    "productDescription": "Zapatillas urbanas para hombres, estilo y comodidad en un solo calzado.",
+    "stockQuantity": 70,
+    "productPrice": 59.99,
+    "categories": ["Calzado", "Ropa de Hombres"],
+    "productImage": "imagen_zapatillas_urbanas.jpg",
+    "manufacturer": "UrbanFeet",
+    "modelNumber": "ZU9009",
+    "weightAndDimensions": {
+      "weight": 0.5,
+      "dimensions": {
+        "length": 25,
+        "width": 10,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "zapatillas",
+      "urbanas",
+      "moda masculina",
+      "estilo",
+      "comodidad"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Pantalones Casuales",
+    "productDescription": "Pantalones casuales para hombres, ideales para el día a día.",
+    "stockQuantity": 50,
+    "productPrice": 49.99,
+    "categories": ["Pantalones", "Ropa de Hombres"],
+    "productImage": "imagen_pantalones_casuales.jpg",
+    "manufacturer": "CasualWear",
+    "modelNumber": "PC6000",
+    "weightAndDimensions": {
+      "weight": 0.6,
+      "dimensions": {
+        "length": 70,
+        "width": 55,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "casuales",
+      "pantalones",
+      "moda masculina",
+      "estilo",
+      "comodidad"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Chaqueta de Cuero Vintage",
+    "productDescription": "Chaqueta de cuero vintage para hombres, un clásico atemporal.",
+    "stockQuantity": 35,
+    "productPrice": 89.99,
+    "categories": ["Chaquetas", "Ropa de Hombres"],
+    "productImage": "imagen_chaqueta_cuero.jpg",
+    "manufacturer": "ClassicLeather",
+    "modelNumber": "CCV2010",
+    "weightAndDimensions": {
+      "weight": 1.5,
+      "dimensions": {
+        "length": 75,
+        "width": 60,
+        "height": 10
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["cuero", "vintage", "moda masculina", "clásico", "estilo"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Zapatillas Deportivas Ultraligeras",
+    "productDescription": "Zapatillas deportivas ultraligeras ideales para correr y hacer ejercicio.",
+    "stockQuantity": 50,
+    "productPrice": 49.99,
+    "categories": ["Calzado", "Ropa Deportiva", "Zapatillas"],
+    "productImage": "imagen_zapatillas.jpg",
+    "manufacturer": "SportsTech",
+    "modelNumber": "ZDU2025",
+    "weightAndDimensions": {
+      "weight": 0.7,
+      "dimensions": {
+        "length": 30,
+        "width": 10,
+        "height": 15
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["deportivas", "correr", "ejercicio", "comodidad", "estilo"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["US 7", "US 8", "US 9", "US 10"]
+      }
+    ]
+  },
+  {
+    "productName": "Pantalones Casuales Slim Fit",
+    "productDescription": "Pantalones casuales de corte ajustado para hombres.",
+    "stockQuantity": 60,
+    "productPrice": 39.99,
+    "categories": ["Pantalones", "Ropa de Hombres"],
+    "productImage": "imagen_pantalones_casuales.jpg",
+    "manufacturer": "FashionStyle",
+    "modelNumber": "PCS2030",
+    "weightAndDimensions": {
+      "weight": 0.6,
+      "dimensions": {
+        "length": 80,
+        "width": 40,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "casual",
+      "slim fit",
+      "moda masculina",
+      "cómodos",
+      "elegantes"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Camisa de Vestir Clásica",
+    "productDescription": "Camisa de vestir clásica para hombres, ideal para ocasiones formales.",
+    "stockQuantity": 45,
+    "productPrice": 49.99,
+    "categories": ["Camisas", "Ropa de Hombres"],
+    "productImage": "imagen_camisa_vestir.jpg",
+    "manufacturer": "ElegantWear",
+    "modelNumber": "CVH3050",
+    "weightAndDimensions": {
+      "weight": 0.5,
+      "dimensions": {
+        "length": 75,
+        "width": 45,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["vestir", "clásica", "formal", "elegante", "estilo"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Botas de Cuero Clásicas",
+    "productDescription": "Botas de cuero clásicas para hombres, duraderas y elegantes.",
+    "stockQuantity": 30,
+    "productPrice": 79.99,
+    "categories": ["Botas", "Ropa de Hombres"],
+    "productImage": "imagen_botas_cuero.jpg",
+    "manufacturer": "ClassicFootwear",
+    "modelNumber": "BCC4015",
+    "weightAndDimensions": {
+      "weight": 1.2,
+      "dimensions": {
+        "length": 35,
+        "width": 12,
+        "height": 20
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["cuero", "clásicas", "duraderas", "elegantes", "calzado"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["US 7", "US 8", "US 9", "US 10"]
+      }
+    ]
+  },
+  {
+    "productName": "Traje de Negocios Formal",
+    "productDescription": "Traje de negocios formal para hombres, ideal para reuniones y eventos.",
+    "stockQuantity": 25,
+    "productPrice": 129.99,
+    "categories": ["Trajes", "Ropa de Hombres"],
+    "productImage": "imagen_traje_negocios.jpg",
+    "manufacturer": "BusinessStyle",
+    "modelNumber": "TBF5000",
+    "weightAndDimensions": {
+      "weight": 1.8,
+      "dimensions": {
+        "length": 90,
+        "width": 50,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["negocios", "formal", "reuniones", "eventos", "elegante"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Sudadera con Capucha",
+    "productDescription": "Sudadera con capucha para hombres, ideal para climas fríos.",
+    "stockQuantity": 55,
+    "productPrice": 34.99,
+    "categories": ["Sudaderas", "Ropa de Hombres"],
+    "productImage": "imagen_sudadera_capucha.jpg",
+    "manufacturer": "WarmWear",
+    "modelNumber": "SWC2075",
+    "weightAndDimensions": {
+      "weight": 0.9,
+      "dimensions": {
+        "length": 70,
+        "width": 50,
+        "height": 8
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["sudadera", "capucha", "invierno", "climas fríos", "moda"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Pantalones Vaqueros Slim Fit",
+    "productDescription": "Pantalones vaqueros de corte ajustado para hombres.",
+    "stockQuantity": 40,
+    "productPrice": 45.99,
+    "categories": ["Vaqueros", "Ropa de Hombres"],
+    "productImage": "imagen_pantalones_vaqueros.jpg",
+    "manufacturer": "DenimStyle",
+    "modelNumber": "PVS3060",
+    "weightAndDimensions": {
+      "weight": 0.7,
+      "dimensions": {
+        "length": 80,
+        "width": 45,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "vaqueros",
+      "slim fit",
+      "moda masculina",
+      "cómodos",
+      "estilo"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Gafas de Sol Estilizadas",
+    "productDescription": "Gafas de sol estilizadas para hombres, protección y estilo.",
+    "stockQuantity": 35,
+    "productPrice": 29.99,
+    "categories": ["Gafas de Sol", "Ropa de Hombres"],
+    "productImage": "imagen_gafas_sol.jpg",
+    "manufacturer": "SunglassMasters",
+    "modelNumber": "GSE2022",
+    "weightAndDimensions": {
+      "weight": 0.2,
+      "dimensions": {
+        "length": 15,
+        "width": 5,
+        "height": 2
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "gafas de sol",
+      "estilizadas",
+      "protección",
+      "moda",
+      "accesorios"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Color",
+        "optionValues": ["Negro", "Marrón", "Gris", "Azul"]
+      }
+    ]
+  },
+  {
+    "productName": "Calcetines de Vestir",
+    "productDescription": "Calcetines de vestir para hombres, comodidad y estilo.",
+    "stockQuantity": 70,
+    "productPrice": 9.99,
+    "categories": ["Calcetines", "Ropa de Hombres"],
+    "productImage": "imagen_calcetines.jpg",
+    "manufacturer": "SockMasters",
+    "modelNumber": "CVS1010",
+    "weightAndDimensions": {
+      "weight": 0.1,
+      "dimensions": {
+        "length": 20,
+        "width": 10,
+        "height": 2
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["calcetines", "vestir", "comodidad", "estilo", "ropa"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L"]
+      }
+    ]
+  },
+  {
+    "productName": "Bermudas Casual",
+    "productDescription": "Bermudas casuales para hombres, ideales para el verano.",
+    "stockQuantity": 50,
+    "productPrice": 24.99,
+    "categories": ["Bermudas", "Ropa de Hombres"],
+    "productImage": "imagen_bermudas.jpg",
+    "manufacturer": "SummerStyle",
+    "modelNumber": "BCS4050",
+    "weightAndDimensions": {
+      "weight": 0.4,
+      "dimensions": {
+        "length": 55,
+        "width": 35,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["bermudas", "casual", "verano", "comodidad", "moda"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Ropa Interior Suave",
+    "productDescription": "Ropa interior suave y cómoda para hombres.",
+    "stockQuantity": 60,
+    "productPrice": 14.99,
+    "categories": ["Ropa Interior", "Ropa de Hombres"],
+    "productImage": "imagen_ropa_interior.jpg",
+    "manufacturer": "ComfortEssentials",
+    "modelNumber": "RIS3030",
+    "weightAndDimensions": {
+      "weight": 0.2,
+      "dimensions": {
+        "length": 20,
+        "width": 15,
+        "height": 3
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["ropa interior", "suave", "cómoda", "calidad", "prendas"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L"]
+      }
+    ]
+  },
+  {
+    "productName": "Shorts Deportivos",
+    "productDescription": "Shorts deportivos para hombres, perfectos para el entrenamiento.",
+    "stockQuantity": 55,
+    "productPrice": 19.99,
+    "categories": ["Shorts", "Ropa de Hombres"],
+    "productImage": "imagen_shorts_deportivos.jpg",
+    "manufacturer": "ActiveGear",
+    "modelNumber": "SDP2090",
+    "weightAndDimensions": {
+      "weight": 0.3,
+      "dimensions": {
+        "length": 35,
+        "width": 25,
+        "height": 5
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": [
+      "deportivos",
+      "entrenamiento",
+      "fitness",
+      "comodidad",
+      "activewear"
+    ],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["S", "M", "L", "XL"]
+      }
+    ]
+  },
+  {
+    "productName": "Zapatillas Urbanas",
+    "productDescription": "Zapatillas urbanas de moda para hombres, estilo y comodidad.",
+    "stockQuantity": 50,
+    "productPrice": 44.99,
+    "categories": ["Calzado", "Ropa de Hombres", "Zapatillas"],
+    "productImage": "imagen_zapatillas_urbanas.jpg",
+    "manufacturer": "UrbanStyle",
+    "modelNumber": "ZUU1015",
+    "weightAndDimensions": {
+      "weight": 0.6,
+      "dimensions": {
+        "length": 30,
+        "width": 10,
+        "height": 15
+      }
+    },
+    "promotionsAndDiscounts": [],
+    "customTags": ["urbanas", "moda", "estilo", "comodidad", "calzado"],
+    "variantOptions": [
+      {
+        "optionName": "Talla",
+        "optionValues": ["US 7", "US 8", "US 9", "US 10"]
+      }
+    ]
+  }
+]

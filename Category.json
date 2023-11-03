@@ -1,0 +1,66 @@
+[
+  {
+    "categoryName": "Remeras",
+    "keywords": ["moda", "camisetas", "ropa", "vestir", "tendencias"]
+  },
+  {
+    "categoryName": "Pantalones",
+    "keywords": ["pantalones", "jeans", "casuales", "formales", "moda"]
+  },
+  {
+    "categoryName": "Camisas",
+    "keywords": ["camisas", "casuales", "elegantes", "estilo", "vestimenta"]
+  },
+  {
+    "categoryName": "Chaquetas",
+    "keywords": ["chaquetas", "abrigos", "invierno", "vestir", "moda"]
+  },
+  {
+    "categoryName": "Vaqueros",
+    "keywords": ["jeans", "vaqueros", "informales", "moda", "ropa"]
+  },
+  {
+    "categoryName": "Trajes",
+    "keywords": ["trajes", "negocios", "formales", "elegantes", "vestimenta"]
+  },
+  {
+    "categoryName": "Accesorios",
+    "keywords": ["corbatas", "bufandas", "cinturones", "moda", "vestir"]
+  },
+  {
+    "categoryName": "Calzado",
+    "keywords": ["zapatos", "botas", "sneakers", "estilo", "calzado"]
+  },
+  {
+    "categoryName": "Ropa Deportiva",
+    "keywords": ["deportiva", "activewear", "fitness", "entrenamiento", "ropa"]
+  },
+  {
+    "categoryName": "Bermudas",
+    "keywords": ["bermudas", "shorts", "verano", "casuales", "moda"]
+  },
+  {
+    "categoryName": "Calcetines",
+    "keywords": ["calcetines", "vestimenta", "estilo", "ropa", "accesorios"]
+  },
+  {
+    "categoryName": "Ropa Interior",
+    "keywords": ["ropa interior", "cómoda", "íntima", "calidad", "prendas"]
+  },
+  {
+    "categoryName": "Sudaderas",
+    "keywords": ["sudaderas", "hoodies", "con capucha", "moda", "vestir"]
+  },
+  {
+    "categoryName": "Shorts",
+    "keywords": ["shorts", "pantalones cortos", "verano", "casuales", "ropa"]
+  },
+  {
+    "categoryName": "Botas",
+    "keywords": ["botas", "calzado", "invierno", "moda", "vestir"]
+  },
+  {
+    "categoryName": "Gafas de Sol",
+    "keywords": ["gafas de sol", "lentes", "protección", "moda", "accesorios"]
+  }
+]
