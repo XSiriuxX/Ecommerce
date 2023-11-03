@@ -1,10 +1,12 @@
-# HE 
+# HE.
 ## Innovador E-commerce con Stack MEAN
 
 ![Logo del E-commerce](URL_DE_LA_IMAGEN_DEL_LOGO)
 
 ## Descripción
-Este innovador e-commerce es una plataforma de compra en línea diseñada para brindar a los usuarios una experiencia de compra fluida y segura. Utiliza el potente stack MEAN (MongoDB, Express.js, Angular y Node.js) para ofrecer un rendimiento óptimo y características avanzadas.
+¡Bienvenido a nuestra tienda de moda masculina en línea! Descubre la última moda para hombres con una amplia gama de prendas y accesorios de alta calidad. Desde trajes elegantes hasta ropa casual y deportiva, nuestro e-commerce ofrece una experiencia de compra perfecta para los hombres con estilo.
+
+Nuestro compromiso es brindarte las tendencias más actuales, la mejor calidad y comodidad, todo en un solo lugar. Explora y encuentra tu estilo único en nuestra tienda en línea, donde la moda masculina se combina con la conveniencia de las compras en Internet.
 
 ## Características Destacadas
 
