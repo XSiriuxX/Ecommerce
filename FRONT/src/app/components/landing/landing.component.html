@@ -1,1 +1,5 @@
 <p>landing works!</p>
+
+<div *ngIf="products && products.length > 0">
+  <app-cards [products]="products"></app-cards>
+</div>
