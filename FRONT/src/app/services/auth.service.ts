@@ -4,10 +4,11 @@ import { User } from '../models/user.model';
 import { JwtResponse } from '../models/jwt-response';
 import { tap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable()
 export class AuthService {
-  API_URL: string = 'http://localhost:4000/user';
+  API_URL: string = `${environment.API_URL}/user`;
   private token: string = '';
 
   constructor(private http: HttpClient) {}
