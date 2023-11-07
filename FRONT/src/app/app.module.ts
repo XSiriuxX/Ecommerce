@@ -8,11 +8,14 @@ import { ProductService } from './services/product.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
-import { LandingComponent } from './components/landing/landing.component';
+import { LoginComponent } from './views/login/login.component';
+import { RegisterComponent } from './views/register/register.component';
+import { LandingComponent } from './views/landing/landing.component';
 import { CardComponent } from './components/card/card.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CartpopupComponent } from './components/cartpopup/cartpopup.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { CardsComponent } from './components/cards/cards.component';
     LandingComponent,
     CardComponent,
     CardsComponent,
+    NavbarComponent,
+    CartpopupComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [AuthService, ProductService],
