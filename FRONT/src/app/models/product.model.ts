@@ -1,4 +1,5 @@
 export interface Product {
+  _id: string;
   productName: string;
   productDescription: string;
   stockQuantity: number;
@@ -23,4 +24,12 @@ export interface Product {
     optionName: string;
     optionValues: string[];
   }[];
+  weightAndDimensions: {
+    dimensions: {
+      height: number;
+      length: number;
+      width: number;
+    };
+    weight: number;
+  };
 }

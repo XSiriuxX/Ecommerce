@@ -5,7 +5,7 @@
     "stockQuantity": 100,
     "productPrice": 19.99,
     "categories": ["Remeras"],
-    "productImage": "imagen_remera.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3hzdHBnajV5MmJyZ3hyeXo5OWJ1/template_primary",
     "manufacturer": "Fabricante A",
     "modelNumber": "12345",
     "weightAndDimensions": {
@@ -31,7 +31,7 @@
     "stockQuantity": 50,
     "productPrice": 149.99,
     "categories": ["Chaquetas"],
-    "productImage": "imagen_chaqueta.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2hpcmJpdXFoNnhxcXJ2dXNmOWJ0/template_primary",
     "manufacturer": "Fabricante B",
     "modelNumber": "7890",
     "weightAndDimensions": {
@@ -57,7 +57,7 @@
     "stockQuantity": 75,
     "productPrice": 49.99,
     "categories": ["Pantalones", "Vaqueros"],
-    "productImage": "imagen_pantalones.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2M2M3dqNng3YmdrZzhuMGt0Nmpk/template_primary",
     "manufacturer": "Fabricante C",
     "modelNumber": "54321",
     "weightAndDimensions": {
@@ -83,7 +83,7 @@
     "stockQuantity": 100,
     "productPrice": 19.99,
     "categories": ["Remeras"],
-    "productImage": "imagen_remera.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2p4dGduaTMwMGlldnlhYjN6dGFh/template_primary",
     "manufacturer": "Fabricante A",
     "modelNumber": "12345",
     "weightAndDimensions": {
@@ -109,7 +109,7 @@
     "stockQuantity": 80,
     "productPrice": 49.99,
     "categories": ["Pantalones"],
-    "productImage": "imagen_pantalon.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2Z6ZHNxMWhhY3lsaDd6MmZuZ3Zm/template_primary",
     "manufacturer": "Fabricante B",
     "modelNumber": "23456",
     "weightAndDimensions": {
@@ -141,7 +141,7 @@
     "stockQuantity": 40,
     "productPrice": 59.99,
     "categories": ["Camisas", "Trajes"],
-    "productImage": "imagen_camisa.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2g0cnN6azc2ZGJrZ3dwd2pjbWd4/template_primary",
     "manufacturer": "Fabricante C",
     "modelNumber": "34567",
     "weightAndDimensions": {
@@ -173,7 +173,7 @@
     "stockQuantity": 60,
     "productPrice": 79.99,
     "categories": ["Calzado", "Ropa Deportiva"],
-    "productImage": "imagen_zapatillas.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3Z6cWp3a3c1b214cW1qaHJtNG9m/template_primary",
     "manufacturer": "Fabricante D",
     "modelNumber": "45678",
     "weightAndDimensions": {
@@ -199,7 +199,7 @@
     "stockQuantity": 30,
     "productPrice": 39.99,
     "categories": ["Gafas de Sol", "Accesorios"],
-    "productImage": "imagen_gafas.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2w2aXF3NGp1b3IzeTBkdmEwaG91/template_primary",
     "manufacturer": "Fabricante E",
     "modelNumber": "56789",
     "weightAndDimensions": {
@@ -226,7 +226,7 @@
     "stockQuantity": 70,
     "productPrice": 54.99,
     "categories": ["Vaqueros"],
-    "productImage": "imagen_vaquero.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL21maXg0NHNucndldXp2b2t0cGVx/template_primary",
     "manufacturer": "Fabricante F",
     "modelNumber": "67890",
     "weightAndDimensions": {
@@ -252,7 +252,7 @@
     "stockQuantity": 45,
     "productPrice": 99.99,
     "categories": ["Trajes"],
-    "productImage": "imagen_traje.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3VnYWdheGhycm41cXF6dzB5c2R4/template_primary",
     "manufacturer": "Fabricante G",
     "modelNumber": "78901",
     "weightAndDimensions": {
@@ -284,7 +284,7 @@
     "stockQuantity": 55,
     "productPrice": 29.99,
     "categories": ["Bermudas", "Ropa de Hombres"],
-    "productImage": "imagen_bermudas.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL25rZmZjeWl1YXFyYmt3MGN0ZW1o/template_primary",
     "manufacturer": "Fabricante H",
     "modelNumber": "89012",
     "weightAndDimensions": {
@@ -316,7 +316,7 @@
     "stockQuantity": 65,
     "productPrice": 24.99,
     "categories": ["Ropa Deportiva"],
-    "productImage": "imagen_shorts.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2R0cHVud2ZjMmxyc2Nnemxob3dj/template_primary",
     "manufacturer": "Fabricante I",
     "modelNumber": "90123",
     "weightAndDimensions": {
@@ -348,7 +348,7 @@
     "stockQuantity": 35,
     "productPrice": 89.99,
     "categories": ["Botas", "Ropa de Hombres"],
-    "productImage": "imagen_botas.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2lucDlya21pcTZuYWFoYXh2N2h2/template_primary",
     "manufacturer": "Fabricante J",
     "modelNumber": "12345",
     "weightAndDimensions": {
@@ -380,7 +380,7 @@
     "stockQuantity": 45,
     "productPrice": 89.99,
     "categories": ["Chaquetas", "Ropa de Hombres"],
-    "productImage": "imagen_chaqueta_invierno.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3J1aGJ5cDNsYzN2bjV4NXE3azVk/template_primary",
     "manufacturer": "OutdoorGear",
     "modelNumber": "CIW3001",
     "weightAndDimensions": {
@@ -412,7 +412,7 @@
     "stockQuantity": 55,
     "productPrice": 69.99,
     "categories": ["Pantalones", "Trajes"],
-    "productImage": "imagen_pantalones_elegantes.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2h0b29jeXJtc3E0ejlqaW9udWti/template_primary",
     "manufacturer": "EleganceCo",
     "modelNumber": "PVE4002",
     "weightAndDimensions": {
@@ -438,7 +438,7 @@
     "stockQuantity": 70,
     "productPrice": 59.99,
     "categories": ["Accesorios", "Ropa de Hombres"],
-    "productImage": "imagen_reloj.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3oxams5Ym5wd3M2cnp3aGJ1dDVu/template_primary",
     "manufacturer": "TimeMasters",
     "modelNumber": "RW5003",
     "weightAndDimensions": {
@@ -465,7 +465,7 @@
     "stockQuantity": 65,
     "productPrice": 39.99,
     "categories": ["Bermudas", "Ropa de Hombres"],
-    "productImage": "imagen_bermudas_verano.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL245eWJkbGJsMmVxc3V6djk5eW5y/template_primary",
     "manufacturer": "SummerStyle",
     "modelNumber": "BV6004",
     "weightAndDimensions": {
@@ -497,7 +497,7 @@
     "stockQuantity": 40,
     "productPrice": 89.99,
     "categories": ["Calzado", "Ropa de Hombres"],
-    "productImage": "imagen_zapatos_cuero.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL291ODdwOHBidm5hZGg0dmhkYmE2/template_primary",
     "manufacturer": "EleganceShoes",
     "modelNumber": "ZC7005",
     "weightAndDimensions": {
@@ -529,7 +529,7 @@
     "stockQuantity": 80,
     "productPrice": 19.99,
     "categories": ["Accesorios", "Ropa de Hombres"],
-    "productImage": "imagen_gorra.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3J5a3B0Z3h1eHhscnJmbmM2djlx/template_primary",
     "manufacturer": "SportGear",
     "modelNumber": "GB8006",
     "weightAndDimensions": {
@@ -556,7 +556,7 @@
     "stockQuantity": 90,
     "productPrice": 9.99,
     "categories": ["Calcetines", "Ropa de Hombres"],
-    "productImage": "imagen_calcetines.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2dscmd4cnozdW1ncTh5cmttcWli/template_primary",
     "manufacturer": "ColorSocks",
     "modelNumber": "CC9007",
     "weightAndDimensions": {
@@ -588,7 +588,7 @@
     "stockQuantity": 70,
     "productPrice": 149.99,
     "categories": ["Trajes", "Ropa de Hombres"],
-    "productImage": "imagen_traje.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2Npd2Rmc2JwODJ6amJkOGttMjQy/template_primary",
     "manufacturer": "BusinessStyle",
     "modelNumber": "TN1008",
     "weightAndDimensions": {
@@ -620,7 +620,7 @@
     "stockQuantity": 85,
     "productPrice": 14.99,
     "categories": ["Accesorios", "Ropa de Hombres"],
-    "productImage": "imagen_pulsera.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3Vjb3B1bW43bmxsYmlmd256Z3Bl/template_primary",
     "manufacturer": "FashionAccessories",
     "modelNumber": "PC1109",
     "weightAndDimensions": {
@@ -647,7 +647,7 @@
     "stockQuantity": 60,
     "productPrice": 69.99,
     "categories": ["Calzado", "Ropa Deportiva"],
-    "productImage": "imagen_zapatos_correr.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3Z2ejlud25vbnk3c2V5d2s2ajA5/template_primary",
     "manufacturer": "RunnersGear",
     "modelNumber": "ZDC2001",
     "weightAndDimensions": {
@@ -679,7 +679,7 @@
     "stockQuantity": 50,
     "productPrice": 49.99,
     "categories": ["Sudaderas", "Ropa de Hombres"],
-    "productImage": "imagen_sudadera.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2d0bGpxMXpwY3c1cHBpcjJoYmN3/template_primary",
     "manufacturer": "WarmStyle",
     "modelNumber": "SC8002",
     "weightAndDimensions": {
@@ -711,7 +711,7 @@
     "stockQuantity": 70,
     "productPrice": 29.99,
     "categories": ["Gafas de Sol", "Accesorios"],
-    "productImage": "imagen_gafas_sol.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL21saTBnbGxrc2pncWp4bG90OGJ4/template_primary",
     "manufacturer": "SunGuard",
     "modelNumber": "GS9003",
     "weightAndDimensions": {
@@ -738,7 +738,7 @@
     "stockQuantity": 65,
     "productPrice": 59.99,
     "categories": ["Vaqueros", "Ropa de Hombres"],
-    "productImage": "imagen_jeans_slim.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3h4c2t4b2d2M3RoYzVubXAzYmR6/template_primary",
     "manufacturer": "SlimFitCo",
     "modelNumber": "JSF3004",
     "weightAndDimensions": {
@@ -770,7 +770,7 @@
     "stockQuantity": 40,
     "productPrice": 79.99,
     "categories": ["Chaquetas", "Trajes"],
-    "productImage": "imagen_saco_elegante.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3hldTlkNnkwN3l0aGdlNXR6aXA1/template_primary",
     "manufacturer": "ElegantWear",
     "modelNumber": "SE4005",
     "weightAndDimensions": {
@@ -796,7 +796,7 @@
     "stockQuantity": 55,
     "productPrice": 39.99,
     "categories": ["Accesorios", "Ropa Deportiva"],
-    "productImage": "imagen_reloj_deportivo.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3hmZmI2bGNvZ3hlbXppbjBlY3c3/template_primary",
     "manufacturer": "SportWatch",
     "modelNumber": "RD5006",
     "weightAndDimensions": {
@@ -823,7 +823,7 @@
     "stockQuantity": 45,
     "productPrice": 44.99,
     "categories": ["Sudaderas", "Ropa de Hombres"],
-    "productImage": "imagen_sudadera_sin_capucha.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL21iaWJyYm1hcWZ0Y2Q4eWlpYWlt/template_primary",
     "manufacturer": "CasualStyle",
     "modelNumber": "SSC7007",
     "weightAndDimensions": {
@@ -855,7 +855,7 @@
     "stockQuantity": 30,
     "productPrice": 129.99,
     "categories": ["Accesorios", "Ropa de Hombres"],
-    "productImage": "imagen_reloj_lujo.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3ZqMHVtMW00MW94bzRqbTk0anRt/template_primary",
     "manufacturer": "LuxuryTime",
     "modelNumber": "RL3008",
     "weightAndDimensions": {
@@ -882,7 +882,7 @@
     "stockQuantity": 70,
     "productPrice": 59.99,
     "categories": ["Calzado", "Ropa de Hombres"],
-    "productImage": "imagen_zapatillas_urbanas.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2tmaG9nenFiZXZvc3BscmJ0MHRi/template_primary",
     "manufacturer": "UrbanFeet",
     "modelNumber": "ZU9009",
     "weightAndDimensions": {
@@ -914,7 +914,7 @@
     "stockQuantity": 50,
     "productPrice": 49.99,
     "categories": ["Pantalones", "Ropa de Hombres"],
-    "productImage": "imagen_pantalones_casuales.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3Y3N3NqbWJiZmduaGhnbXVrZWxp/template_primary",
     "manufacturer": "CasualWear",
     "modelNumber": "PC6000",
     "weightAndDimensions": {
@@ -946,7 +946,7 @@
     "stockQuantity": 35,
     "productPrice": 89.99,
     "categories": ["Chaquetas", "Ropa de Hombres"],
-    "productImage": "imagen_chaqueta_cuero.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL29od2Q5dHRsdjF0ZmFidHl2NHhi/template_primary",
     "manufacturer": "ClassicLeather",
     "modelNumber": "CCV2010",
     "weightAndDimensions": {
@@ -972,7 +972,7 @@
     "stockQuantity": 50,
     "productPrice": 49.99,
     "categories": ["Calzado", "Ropa Deportiva", "Zapatillas"],
-    "productImage": "imagen_zapatillas.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3NvbXlqaGZkeGhjOXJ0MnVsYmtq/template_primary",
     "manufacturer": "SportsTech",
     "modelNumber": "ZDU2025",
     "weightAndDimensions": {
@@ -998,7 +998,7 @@
     "stockQuantity": 60,
     "productPrice": 39.99,
     "categories": ["Pantalones", "Ropa de Hombres"],
-    "productImage": "imagen_pantalones_casuales.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3kyZXFsdW5qb2hzN29iYmJsbWNk/template_primary",
     "manufacturer": "FashionStyle",
     "modelNumber": "PCS2030",
     "weightAndDimensions": {
@@ -1030,7 +1030,7 @@
     "stockQuantity": 45,
     "productPrice": 49.99,
     "categories": ["Camisas", "Ropa de Hombres"],
-    "productImage": "imagen_camisa_vestir.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3J1bnNjenR2cGJtd2FwN3FkMHFt/template_primary",
     "manufacturer": "ElegantWear",
     "modelNumber": "CVH3050",
     "weightAndDimensions": {
@@ -1056,7 +1056,7 @@
     "stockQuantity": 30,
     "productPrice": 79.99,
     "categories": ["Botas", "Ropa de Hombres"],
-    "productImage": "imagen_botas_cuero.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2Zyb2xqczJnNWFidXc1cnF5Y3M2/template_primary",
     "manufacturer": "ClassicFootwear",
     "modelNumber": "BCC4015",
     "weightAndDimensions": {
@@ -1082,7 +1082,7 @@
     "stockQuantity": 25,
     "productPrice": 129.99,
     "categories": ["Trajes", "Ropa de Hombres"],
-    "productImage": "imagen_traje_negocios.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3oydG01amh0YWtjcGtzZHVzZmpz/template_primary",
     "manufacturer": "BusinessStyle",
     "modelNumber": "TBF5000",
     "weightAndDimensions": {
@@ -1108,7 +1108,7 @@
     "stockQuantity": 55,
     "productPrice": 34.99,
     "categories": ["Sudaderas", "Ropa de Hombres"],
-    "productImage": "imagen_sudadera_capucha.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2dtMXRjZmNhYXM4ZmRuZHR4dzd2/template_primary",
     "manufacturer": "WarmWear",
     "modelNumber": "SWC2075",
     "weightAndDimensions": {
@@ -1134,7 +1134,7 @@
     "stockQuantity": 40,
     "productPrice": 45.99,
     "categories": ["Vaqueros", "Ropa de Hombres"],
-    "productImage": "imagen_pantalones_vaqueros.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3F3OHNoZjZkamtrenFpam5xYWtx/template_primary",
     "manufacturer": "DenimStyle",
     "modelNumber": "PVS3060",
     "weightAndDimensions": {
@@ -1166,7 +1166,7 @@
     "stockQuantity": 35,
     "productPrice": 29.99,
     "categories": ["Gafas de Sol", "Ropa de Hombres"],
-    "productImage": "imagen_gafas_sol.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL215Y28zaWN6aHp1eXN6cXhkdzAw/template_primary",
     "manufacturer": "SunglassMasters",
     "modelNumber": "GSE2022",
     "weightAndDimensions": {
@@ -1198,7 +1198,7 @@
     "stockQuantity": 70,
     "productPrice": 9.99,
     "categories": ["Calcetines", "Ropa de Hombres"],
-    "productImage": "imagen_calcetines.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3FjaG1laGl5MGt4YW9heGY5OWNu/template_primary",
     "manufacturer": "SockMasters",
     "modelNumber": "CVS1010",
     "weightAndDimensions": {
@@ -1224,7 +1224,7 @@
     "stockQuantity": 50,
     "productPrice": 24.99,
     "categories": ["Bermudas", "Ropa de Hombres"],
-    "productImage": "imagen_bermudas.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3NhYnZ1MWtobm5tZWkwcHJxcmZn/template_primary",
     "manufacturer": "SummerStyle",
     "modelNumber": "BCS4050",
     "weightAndDimensions": {
@@ -1250,7 +1250,7 @@
     "stockQuantity": 60,
     "productPrice": 14.99,
     "categories": ["Ropa Interior", "Ropa de Hombres"],
-    "productImage": "imagen_ropa_interior.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3F0b2Rmc3FpbHBzZmYxbXdlcjB5/template_primary",
     "manufacturer": "ComfortEssentials",
     "modelNumber": "RIS3030",
     "weightAndDimensions": {
@@ -1276,7 +1276,7 @@
     "stockQuantity": 55,
     "productPrice": 19.99,
     "categories": ["Shorts", "Ropa de Hombres"],
-    "productImage": "imagen_shorts_deportivos.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL2ZmcHMyemZuanl6dW9lNjFscWdn/template_primary",
     "manufacturer": "ActiveGear",
     "modelNumber": "SDP2090",
     "weightAndDimensions": {
@@ -1308,7 +1308,7 @@
     "stockQuantity": 50,
     "productPrice": 44.99,
     "categories": ["Calzado", "Ropa de Hombres", "Zapatillas"],
-    "productImage": "imagen_zapatillas_urbanas.jpg",
+    "productImage": "https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3RndHp1dzNkcWdkdDdpeW92Y3Z2/template_primary",
     "manufacturer": "UrbanStyle",
     "modelNumber": "ZUU1015",
     "weightAndDimensions": {

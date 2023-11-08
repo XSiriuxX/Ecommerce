@@ -16,6 +16,8 @@ import { CardsComponent } from './components/cards/cards.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CartpopupComponent } from './components/cartpopup/cartpopup.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ProductDetailComponent } from './views/product-detail/product-detail.component';
+import { ProductsComponent } from './views/products/products.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     CartpopupComponent,
     FooterComponent,
+    ProductDetailComponent,
+    ProductsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [AuthService, ProductService],

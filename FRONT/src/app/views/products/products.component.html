@@ -1,0 +1,7 @@
+<app-navbar />
+
+<section *ngIf="products && products.length > 0">
+  <app-cards [products]="products"></app-cards>
+</section>
+
+<app-footer />

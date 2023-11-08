@@ -1,8 +1,8 @@
-<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-  <a href="#">
-    <img class="hover:grow hover:shadow-lg" [src]="product?.productImage" />
+<div class="w-100 p-6 flex flex-col">
+  <a [routerLink]="'/product/' + product?._id">
+    <img class="hover:grow" [src]="product?.productImage" />
     <div class="pt-3 flex items-center justify-between">
-      <p class="">{{ product?.productName }}</p>
+      <p class="font-bold">{{ product?.productName }}</p>
       <svg
         class="h-6 w-6 fill-current text-gray-500 hover:text-black"
         xmlns="http://www.w3.org/2000/svg"
