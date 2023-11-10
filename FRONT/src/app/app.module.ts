@@ -18,6 +18,7 @@ import { CartpopupComponent } from './components/cartpopup/cartpopup.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductDetailComponent } from './views/product-detail/product-detail.component';
 import { ProductsComponent } from './views/products/products.component';
+import { DarkModeService } from './services/dark-mode.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { ProductsComponent } from './views/products/products.component';
     ProductsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
-  providers: [AuthService, ProductService],
+  providers: [AuthService, ProductService, DarkModeService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
