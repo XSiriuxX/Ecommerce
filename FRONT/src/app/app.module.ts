@@ -19,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProductDetailComponent } from './views/product-detail/product-detail.component';
 import { ProductsComponent } from './views/products/products.component';
 import { DarkModeService } from './services/dark-mode.service';
+import { CartComponent } from './views/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { DarkModeService } from './services/dark-mode.service';
     FooterComponent,
     ProductDetailComponent,
     ProductsComponent,
+    CartComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [AuthService, ProductService, DarkModeService],

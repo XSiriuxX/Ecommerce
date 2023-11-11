@@ -5,6 +5,7 @@ import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 import { ProductDetailComponent } from './views/product-detail/product-detail.component';
 import { ProductsComponent } from './views/products/products.component';
+import { CartComponent } from './views/cart/cart.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'product/:id', component: ProductDetailComponent },
   { path: 'products', component: ProductsComponent },
+  { path: 'cart', component: CartComponent },
 ];
 
 @NgModule({

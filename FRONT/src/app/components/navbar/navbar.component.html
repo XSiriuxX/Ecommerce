@@ -4,9 +4,9 @@
 >
   <div
     style="max-width: 1600px"
-    class="w-full mx-auto flex items-center justify-between px-6 py-3"
+    class="w-full mx-auto flex flex-wrap items-center justify-between px-6 py-3"
   >
-    <label for="menu-toggle" class="cursor-pointer md:hidden block w-xl w-32">
+    <label for="menu-toggle" class="cursor-pointer md:hidden block mr-20">
       <svg
         class="w-6 mx-1 cursor-pointer"
         viewBox="0 0 24 24"
@@ -21,24 +21,25 @@
         />
       </svg>
     </label>
+
     <input class="hidden" type="checkbox" id="menu-toggle" />
 
     <div
-      class="hidden md:flex md:items-center w-32 order-3 md:order-1"
+      class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1"
       id="menu"
     >
       <nav>
         <ul class="md:flex items-center justify-between text-base md:pt-0">
           <li>
             <a
-              class="inline-block hover:underline dark:text-white mx-2"
+              class="inline-block hover:underline dark:text-white mx-2 my-2"
               href="/products"
               >Shop</a
             >
           </li>
           <li>
             <a
-              class="inline-block hover:underline dark:text-white mx-2"
+              class="inline-block hover:underline dark:text-white mx-2 my-2"
               href="/about"
               >About</a
             >
