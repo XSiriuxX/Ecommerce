@@ -10,4 +10,6 @@ router.post("/register", user.createuser);
 router.post("/login", user.loginuser);
 router.post("/reset", user.resetPassword);
 
+router.post("/cart", user.addToCart);
+
 module.exports = router;

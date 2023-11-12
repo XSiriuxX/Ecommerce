@@ -50,7 +50,12 @@ const userSchema = new Schema(
         ref: "Order",
       },
     ],
-    cart: [{ type: Schema.Types.ObjectId, ref: "Product" }],
+    cart: [
+      {
+        productId: { type: Schema.Types.ObjectId, ref: "Product" },
+        quantity: { type: Number, default: 1 },
+      },
+    ],
     favorites: [{ type: Schema.Types.ObjectId, ref: "Product" }],
   },
   {

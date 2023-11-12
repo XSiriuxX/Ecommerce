@@ -5,6 +5,7 @@ const SECRET_KEY = "secretkey123";
 
 const User = require("../models/User.model");
 const Order = require("../models/Order.model");
+const Product = require("../models/Product.model");
 
 const user = {};
 
@@ -119,6 +120,44 @@ user.resetPassword = async (req, res) => {
 
     res.status(200).json({ message: "Contraseña actualizada" });
   } catch (error) {
+    res.status(500).json({ message: "Error interno del servidor" });
+  }
+};
+
+user.addToCart = async (req, res) => {
+  try {
+    const { userId, productId, quantity } = req.body;
+
+    if (!userId || !productId || !quantity) {
+      return res
+        .status(400)
+        .json({ message: "Faltan detalles del producto o del usuario" });
+    }
+
+    const user = await User.findById(userId);
+    const product = await Product.findById(productId);
+
+    if (!user || !product) {
+      return res
+        .status(404)
+        .json({ message: "Usuario o producto no encontrado" });
+    }
+    console.log("aqui");
+    const existingProduct = user.cart.find((item) =>
+      item.productId.equals(productId)
+    );
+
+    if (existingProduct) {
+      existingProduct.quantity += quantity;
+    } else {
+      user.cart.push({ productId, quantity });
+    }
+
+    await user.save();
+
+    res.status(200).json({ message: "Producto agregado al carrito con éxito" });
+  } catch (error) {
+    console.log(error.message);
     res.status(500).json({ message: "Error interno del servidor" });
   }
 };
