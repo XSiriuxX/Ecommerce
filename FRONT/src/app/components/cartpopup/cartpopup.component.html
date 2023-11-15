@@ -30,7 +30,6 @@
         </div>
 
         <div class="flex flex-1 items-center justify-end gap-2">
-          <!-- Aquí puedes agregar la lógica para cambiar la cantidad y eliminar el producto -->
           <form>
             <label for="Line1Qty" class="sr-only"> Quantity </label>
 
@@ -43,9 +42,10 @@
             />
           </form>
 
-          <button class="text-gray-600 transition hover:text-red-600">
-            <span class="sr-only">Remove item</span>
-
+          <button
+            class="text-gray-600 transition hover:text-red-600"
+            (click)="deleteProduct(product?.productId)"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -70,7 +70,7 @@
         href="/cart"
         class="block rounded border border-gray-600 px-5 py-3 text-sm text-gray-600 transition hover:ring-1 hover:ring-gray-400"
       >
-        View my cart (1)
+        View my cart ({{ cart.length }})
       </a>
 
       <a

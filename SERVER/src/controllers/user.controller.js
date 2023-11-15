@@ -188,8 +188,9 @@ user.getCart = async (req, res) => {
           description: product
             ? product.productDescription
             : "Descripción no disponible",
-          stockQuantity: product ? product.stockQuantity : "0",
+          stockQuantity: product ? product.stockQuantity : 0,
           productImage: product ? product.productImage : "",
+          productPrice: product ? product.productPrice : 0,
         };
       })
     );
@@ -203,7 +204,11 @@ user.getCart = async (req, res) => {
 
 user.removeCart = async (req, res) => {
   try {
-    const { userId, productId } = req.body;
+    let { userId, productId, quantity } = req.body;
+
+    if (!quantity) {
+      quantity = 1;
+    }
 
     if (!userId || !productId) {
       return res
@@ -222,7 +227,7 @@ user.removeCart = async (req, res) => {
     );
 
     if (existingProduct) {
-      existingProduct.quantity -= 1;
+      existingProduct.quantity -= quantity;
 
       if (existingProduct.quantity === 0) {
         user.cart = user.cart.filter(

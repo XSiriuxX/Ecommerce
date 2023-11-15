@@ -17,6 +17,7 @@ export class CartpopupComponent {
     productImage: string;
   }[] = [];
   userId: string = '';
+  deletedProduct: any = {};
 
   constructor(
     private cartService: CartService,
@@ -31,7 +32,17 @@ export class CartpopupComponent {
   getProductsCart() {
     this.cartService.getProductsCart(this.userId).subscribe((res: any) => {
       this.cart = res;
-      console.log(res);
     });
+  }
+
+  deleteProduct(id: string | undefined) {
+    this.deletedProduct = {
+      userId: this.userId,
+      productId: id,
+    };
+
+    this.cartService
+      .deleteProduct(this.deletedProduct)
+      .subscribe((res) => this.getProductsCart());
   }
 }

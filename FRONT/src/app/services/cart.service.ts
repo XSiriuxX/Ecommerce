@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, tap } from 'rxjs';
 import { environment } from 'src/environments/environment';
@@ -19,6 +19,21 @@ export class CartService {
 
   addProduct(newproduct: any): Observable<any> {
     return this.http.post<any>(`${this.API_URL}`, newproduct).pipe(
+      tap((res) => {
+        return res;
+      })
+    );
+  }
+
+  deleteProduct(deletedproduct: any): Observable<any> {
+    const options = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+      }),
+      body: deletedproduct,
+    };
+
+    return this.http.request<any>('delete', `${this.API_URL}`, options).pipe(
       tap((res) => {
         return res;
       })

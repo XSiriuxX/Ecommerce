@@ -12,7 +12,9 @@ export class CardComponent {
   userId: string = '';
   newProduct: any = {};
 
-  constructor(private cartService: CartService) {}
+  constructor(
+    private cartService: CartService // private cartpopup: CartpopupComponent
+  ) {}
 
   ngOnInit() {
     this.userId = localStorage.getItem('ID') || '';
@@ -27,6 +29,6 @@ export class CardComponent {
 
     this.cartService
       .addProduct(this.newProduct)
-      .subscribe((res) => console.log(res));
+      .subscribe((res) => this.cartService.getProductsCart(this.userId));
   }
 }
