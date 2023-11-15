@@ -77,7 +77,7 @@
       <svg
         class="w-6 mx-2 cursor-pointer"
         viewBox="0 0 24 24"
-        routerLink="/login"
+        (click)="toggleUser()"
         fill="none"
       >
         <path
@@ -87,6 +87,8 @@
           stroke-linejoin="round"
         />
       </svg>
+
+      <app-userpopup *ngIf="showUser" [isLoggedIn]="isLoggedIn" />
 
       <svg
         class="w-6 mx-2 cursor-pointer"

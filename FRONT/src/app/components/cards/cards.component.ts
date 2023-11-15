@@ -9,7 +9,5 @@ import { Product } from 'src/app/models/product.model';
 export class CardsComponent {
   @Input() products: Product[] = [];
 
-  ngOnInit() {
-    this.products && console.log(this.products);
-  }
+  ngOnInit() {}
 }

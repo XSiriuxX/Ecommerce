@@ -18,7 +18,7 @@ export class LandingComponent {
 
   getProducts() {
     this.productService.getAllProducts().subscribe((res: Product[]) => {
-      this.products = res.slice(0, 8);
+      this.products = res;
     });
   }
 }

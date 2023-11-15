@@ -16,7 +16,7 @@ export class AuthService {
   register(user: User): Observable<JwtResponse> {
     return this.http.post<JwtResponse>(`${this.API_URL}/register`, user).pipe(
       tap((res) => {
-        this.saveToken(res.accessToken, res.expiresIn);
+        this.saveToken(res.accessToken, res.expiresIn, res.id);
       })
     );
   }
@@ -24,20 +24,26 @@ export class AuthService {
   logIn(user: User): Observable<JwtResponse> {
     return this.http.post<JwtResponse>(`${this.API_URL}/login`, user).pipe(
       tap((res) => {
-        this.saveToken(res.accessToken, res.expiresIn);
+        this.saveToken(res.accessToken, res.expiresIn, res.id);
       })
     );
+  }
+
+  isLoggedIn() {
+    return !!localStorage.getItem('ACCESS_TOKEN');
   }
 
   logOut() {
     this.token = '';
     localStorage.removeItem('ACCESS_TOKEN');
     localStorage.removeItem('EXPIRES_IN');
+    localStorage.removeItem('ID');
   }
 
-  private saveToken(token: string, expiresIn: string): void {
+  private saveToken(token: string, expiresIn: string, id: string): void {
     localStorage.setItem('ACCESS_TOKEN', token);
     localStorage.setItem('EXPIRES_IN', expiresIn);
+    localStorage.setItem('ID', id);
     this.token = token;
   }
 }

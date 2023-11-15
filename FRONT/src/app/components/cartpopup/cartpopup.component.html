@@ -1,42 +1,43 @@
 <div
-  class="absolute right-20 top-20 z-50 w-screen max-w-sm border border-gray-600 bg-gray-100 px-4 py-8 sm:px-6 lg:px-8"
+  class="cart-container absolute right-6 top-16 z-50 w-screen max-w-sm border border-gray-600 bg-gray-100 px-4 py-8 sm:px-6 lg:px-8"
   aria-modal="true"
   role="dialog"
   tabindex="-1"
 >
   <div class="mt-4 space-y-6">
     <ul class="space-y-4">
-      <li class="flex items-center gap-4">
+      <li *ngFor="let product of cart" class="flex items-center gap-4">
         <img
-          src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80"
+          [src]="product.productImage"
           alt=""
           class="h-16 w-16 rounded object-cover"
         />
 
         <div>
-          <h3 class="text-sm text-gray-900">Basic Tee 6-Pack</h3>
+          <h3 class="text-sm text-gray-900">{{ product.name }}</h3>
 
           <dl class="mt-0.5 space-y-px text-[10px] text-gray-600">
             <div>
-              <dt class="inline">Size:</dt>
-              <dd class="inline">XXS</dd>
+              <dt class="inline">Quantity:</dt>
+              <dd class="inline">{{ product.quantity }}</dd>
             </div>
 
             <div>
-              <dt class="inline">Color:</dt>
-              <dd class="inline">White</dd>
+              <dt class="inline">Description:</dt>
+              <dd class="inline">{{ product.description }}</dd>
             </div>
           </dl>
         </div>
 
         <div class="flex flex-1 items-center justify-end gap-2">
+          <!-- Aquí puedes agregar la lógica para cambiar la cantidad y eliminar el producto -->
           <form>
             <label for="Line1Qty" class="sr-only"> Quantity </label>
 
             <input
               type="number"
               min="1"
-              value="1"
+              [value]="product.quantity"
               id="Line1Qty"
               class="h-8 w-12 rounded border-gray-200 bg-gray-50 p-0 text-center text-xs text-gray-600 [-moz-appearance:_textfield] focus:outline-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none"
             />
@@ -77,13 +78,6 @@
         class="block rounded bg-gray-700 px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600"
       >
         Checkout
-      </a>
-
-      <a
-        href="#"
-        class="inline-block text-sm text-gray-500 underline underline-offset-4 transition hover:text-gray-600"
-      >
-        Continue shopping
       </a>
     </div>
   </div>

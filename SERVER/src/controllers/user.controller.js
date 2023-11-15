@@ -59,7 +59,7 @@ user.createuser = async (req, res) => {
       const expiresIn = 24 * 60 * 60;
       const accessToken = jwt.sign({ id: user._id }, SECRET_KEY, { expiresIn });
 
-      res.status(203).json({ username, email, accessToken, expiresIn });
+      res.status(203).json({ username, id: user._id, accessToken, expiresIn });
     } else {
       res.status(500).json({ message: "No se pudo crear el usuario" });
     }
@@ -92,7 +92,7 @@ user.loginuser = async (req, res) => {
       const expiresIn = 24 * 60 * 60;
       const accessToken = jwt.sign({ id: user._id }, SECRET_KEY, { expiresIn });
 
-      res.status(200).json({ email, accessToken, expiresIn });
+      res.status(200).json({ id: user._id, accessToken, expiresIn });
     } else {
       res.status(401).json({ message: "Contraseña incorrecta" });
     }
@@ -156,6 +156,87 @@ user.addToCart = async (req, res) => {
     await user.save();
 
     res.status(200).json({ message: "Producto agregado al carrito con éxito" });
+  } catch (error) {
+    console.log(error.message);
+    res.status(500).json({ message: "Error interno del servidor" });
+  }
+};
+
+user.getCart = async (req, res) => {
+  try {
+    const userId = req.params.id;
+
+    if (!userId) {
+      return res.status(400).json({ message: "Falta el ID de usuario" });
+    }
+
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ message: "Usuario no encontrado" });
+    }
+
+    const cartDetails = await Promise.all(
+      user.cart.map(async (cartItem) => {
+        const product = await Product.findById(cartItem.productId);
+        console.log(product);
+
+        return {
+          productId: cartItem.productId,
+          quantity: cartItem.quantity,
+          name: product ? product.productName : "Producto no encontrado",
+          description: product
+            ? product.productDescription
+            : "Descripción no disponible",
+          stockQuantity: product ? product.stockQuantity : "0",
+          productImage: product ? product.productImage : "",
+        };
+      })
+    );
+
+    res.status(200).json(cartDetails);
+  } catch (error) {
+    console.log(error.message);
+    res.status(500).json({ message: "Error interno del servidor" });
+  }
+};
+
+user.removeCart = async (req, res) => {
+  try {
+    const { userId, productId } = req.body;
+
+    if (!userId || !productId) {
+      return res
+        .status(400)
+        .json({ message: "Faltan detalles del producto o del usuario" });
+    }
+
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ message: "Usuario no encontrado" });
+    }
+
+    const existingProduct = user.cart.find((item) =>
+      item.productId.equals(productId)
+    );
+
+    if (existingProduct) {
+      existingProduct.quantity -= 1;
+
+      if (existingProduct.quantity === 0) {
+        user.cart = user.cart.filter(
+          (item) => !item.productId.equals(productId)
+        );
+      }
+
+      await user.save();
+      res
+        .status(200)
+        .json({ message: "Producto actualizado en el carrito con éxito" });
+    } else {
+      res.status(404).json({ message: "Producto no encontrado en el carrito" });
+    }
   } catch (error) {
     console.log(error.message);
     res.status(500).json({ message: "Error interno del servidor" });

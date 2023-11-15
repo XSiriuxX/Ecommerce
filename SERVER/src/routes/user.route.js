@@ -11,5 +11,7 @@ router.post("/login", user.loginuser);
 router.post("/reset", user.resetPassword);
 
 router.post("/cart", user.addToCart);
+router.get("/cart/:id", user.getCart);
+router.delete("/cart", user.removeCart);
 
 module.exports = router;

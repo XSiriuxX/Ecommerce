@@ -20,6 +20,9 @@ import { ProductDetailComponent } from './views/product-detail/product-detail.co
 import { ProductsComponent } from './views/products/products.component';
 import { DarkModeService } from './services/dark-mode.service';
 import { CartComponent } from './views/cart/cart.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { UserpopupComponent } from './userpopup/userpopup.component';
+import { CartService } from './services/cart.service';
 
 @NgModule({
   declarations: [
@@ -35,9 +38,11 @@ import { CartComponent } from './views/cart/cart.component';
     ProductDetailComponent,
     ProductsComponent,
     CartComponent,
+    CarouselComponent,
+    UserpopupComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
-  providers: [AuthService, ProductService, DarkModeService],
+  providers: [AuthService, ProductService, DarkModeService, CartService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
