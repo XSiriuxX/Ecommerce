@@ -23,6 +23,7 @@ import { CartComponent } from './views/cart/cart.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { UserpopupComponent } from './userpopup/userpopup.component';
 import { CartService } from './services/cart.service';
+import { FiltersComponent } from './components/filters/filters.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { CartService } from './services/cart.service';
     CartComponent,
     CarouselComponent,
     UserpopupComponent,
+    FiltersComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [AuthService, ProductService, DarkModeService, CartService],

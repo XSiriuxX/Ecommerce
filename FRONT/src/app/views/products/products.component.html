@@ -1,5 +1,7 @@
 <app-navbar />
 
+<app-filters></app-filters>
+
 <section *ngIf="products && products.length > 0">
   <app-cards [products]="products"></app-cards>
 </section>

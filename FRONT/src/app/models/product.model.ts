@@ -4,7 +4,7 @@ export interface Product {
   productDescription: string;
   stockQuantity: number;
   productPrice: number;
-  categories: [];
+  categories: string[];
   productImage: string;
   manufacturer: string;
   modelNumber: string;

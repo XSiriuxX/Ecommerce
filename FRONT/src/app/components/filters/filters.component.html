@@ -1,0 +1,66 @@
+<section
+  class="mx-auto flex w-full justify-center pt-4 sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px]"
+>
+  <div
+    *ngIf="filterCounter > 0"
+    class="mb-3 ml-4 flex min-h-[3rem] items-center justify-between rounded-md bg-stone-500 px-4 py-2 text-stone-50"
+  >
+    <i class="fas fa-times pr-2 group-hover:text-white"></i>
+    Reset
+  </div>
+
+  <div
+    *ngIf="!filterCounter || filterCounter > 0"
+    [ngClass]="{ flex: !filterCounter, hidden: filterCounter }"
+  >
+    <div class="flex items-start">
+      <div
+        class="mb-3"
+        x-ref="myFilter"
+        [ngClass]="{ hidden: !show }"
+        (click)="open()"
+      >
+        <button
+          id="dropdownDefault"
+          data-dropdown-toggle="dropdown"
+          type="button"
+          class="flex min-h-[3rem] items-center justify-between rounded-md bg-stone-100 px-4 py-2 text-stone-800"
+        >
+          Type
+          <span
+            *ngIf="counter"
+            class="bg-green-500 text-green-100 card-pills--counter ml-2 rounded-md px-2 py-1 text-sm"
+            >0</span
+          >
+          <i
+            class="fas fa-angle-down pl-3 text-stone-700 dark:text-stone-300"
+          ></i>
+        </button>
+        <div
+          *ngIf="isOpen()"
+          (click)="close()"
+          class="w-46 shadow-stone-55 absolute z-10 divide-y divide-gray-100 overflow-hidden rounded-md bg-white shadow-lg"
+          data-popper-placement="bottom"
+        >
+          <ul class="text-gray-700" aria-labelledby="dropdownDefault">
+            <li
+              *ngFor="let item of filterItems"
+              [attr.x-data]="{ checked: false }"
+            >
+              <button
+                [ngClass]="item.checked ? 'text-green-500 bg-green-50' : ''"
+                class="group flex w-full items-center justify-between px-4 py-2 hover:bg-stone-500 hover:text-stone-300"
+              >
+                {{ item.label }}
+                <i
+                  [ngClass]="item.checked ? 'text-green-400' : 'text-gray-600'"
+                  class="fas fa-check pl-4 group-hover:text-white text-gray-600"
+                ></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
