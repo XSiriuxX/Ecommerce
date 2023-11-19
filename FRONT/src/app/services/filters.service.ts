@@ -14,7 +14,7 @@ export class FiltersService {
   }
 
   filterAndSortProducts(
-    category: string,
+    categories: string[],
     minPrice: number,
     maxPrice: number,
     sortBy: string = 'name',
@@ -23,9 +23,9 @@ export class FiltersService {
     // Aplicar filtros
     let filteredProducts = this.products;
 
-    if (category) {
+    if (categories && categories.length > 0) {
       filteredProducts = filteredProducts.filter((product) =>
-        product.categories.includes(category)
+        categories.some((category) => product.categories.includes(category))
       );
     }
 
@@ -51,6 +51,7 @@ export class FiltersService {
           filteredProducts,
           ascending
         );
+        break;
       case '':
         filteredProducts;
         break;
