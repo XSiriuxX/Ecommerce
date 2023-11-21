@@ -37,16 +37,17 @@ export class FiltersComponent {
       .filter((category) => category.selected)
       .map((category) => category.categoryName);
 
-    this.filtersService.filterAndSortProducts(
-      this.selectedCategories,
-      this.minPrice,
-      this.maxPrice
-    )
-    console.log(this.selectedCategories);
+    this.filtersService.setSelectedFilters({
+      categories: this.selectedCategories,
+      minPrice: this.minPrice,
+      maxPrice: this.maxPrice,
+    });
+
+    // Obtener los productos filtrados del servicio y actualizar la vista
+    this.filtersService.filterAndSortProducts();
   }
 
   resetFilters() {
-    // Desmarcar todas las categorías
     this.categories.forEach((category) => (category.selected = false));
     this.applyFilters();
   }
