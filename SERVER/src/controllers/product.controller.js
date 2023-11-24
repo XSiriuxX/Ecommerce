@@ -16,6 +16,7 @@ product.getProducts = async (req, res) => {
       productName: product.productName,
       productImage: product.productImage,
       productPrice: product.productPrice,
+      categories: product.categories,
     }));
     res.status(200).json(response);
   } catch (error) {

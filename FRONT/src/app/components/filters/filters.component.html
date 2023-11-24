@@ -24,7 +24,7 @@
     </summary>
 
     <div
-      class="z-50 group-open:absolute group-open:start-0 group-open:top-auto group-open:mt-2 w-96 rounded border border-gray-200 bg-white"
+      class="z-50 group-open:absolute group-open:top-auto group-open:mt-2 w-40 rounded border border-gray-200 bg-white"
     >
       <ul class="space-y-1 border-t border-gray-200 p-4">
         <li *ngFor="let category of categories">
@@ -47,14 +47,6 @@
           </label>
         </li>
       </ul>
-
-      <button
-        type="button"
-        class="text-sm text-gray-900 underline underline-offset-4 p-4"
-        (click)="resetFilters()"
-      >
-        Reset
-      </button>
     </div>
   </details>
 
@@ -83,7 +75,7 @@
     </summary>
 
     <div
-      class="z-50 group-open:absolute group-open:start-0 group-open:top-auto group-open:mt-2 w-96 rounded border border-gray-200 bg-white"
+      class="z-50 group-open:absolute group-open:top-auto group-open:mt-2 w-60 rounded border border-gray-200 bg-white"
     >
       <div class="border-t border-gray-200 p-4 flex justify-between gap-4">
         <label for="FilterPriceFrom" class="flex items-center gap-2">
@@ -94,9 +86,11 @@
             id="FilterPriceFrom"
             placeholder="Desde"
             class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
+            [(ngModel)]="minPrice"
+            (ngModelChange)="applyFilters()"
           />
         </label>
-
+        -
         <label for="FilterPriceTo" class="flex items-center gap-2">
           <span class="text-sm text-gray-600">$</span>
 
@@ -105,16 +99,11 @@
             id="FilterPriceTo"
             placeholder="Hasta"
             class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
+            [(ngModel)]="maxPrice"
+            (ngModelChange)="applyFilters()"
           />
         </label>
       </div>
-
-      <button
-        type="button"
-        class="text-sm text-gray-900 underline underline-offset-4"
-      >
-        Reset
-      </button>
     </div>
   </details>
 
@@ -143,37 +132,36 @@
     </summary>
 
     <div
-      class="z-50 group-open:absolute group-open:start-0 group-open:top-auto group-open:mt-2 w-96 rounded border border-gray-200 bg-white"
+      class="z-50 group-open:absolute group-open:top-auto group-open:mt-2 w-40 rounded border border-gray-200 bg-white"
     >
       <ul class="space-y-1 border-t border-gray-200 p-4">
-        <li>
-          <label for="FilterInStock" class="inline-flex items-center gap-2">
+        <li (click)="setSorting('name', true)">
+          <label class="inline-flex items-center gap-2 cursor-pointer">
             A - Z
           </label>
         </li>
-        <li>
-          <label for="FilterInStock" class="inline-flex items-center gap-2">
+        <li (click)="setSorting('name', false)">
+          <label class="inline-flex items-center gap-2 cursor-pointer">
             Z - A
           </label>
         </li>
-        <li>
-          <label for="FilterInStock" class="inline-flex items-center gap-2">
+        <li (click)="setSorting('price', true)">
+          <label class="inline-flex items-center gap-2 cursor-pointer">
             Menor precio
           </label>
         </li>
-        <li>
-          <label for="FilterInStock" class="inline-flex items-center gap-2">
+        <li (click)="setSorting('price', false)">
+          <label class="inline-flex items-center gap-2 cursor-pointer">
             Mayor precio
           </label>
         </li>
       </ul>
-
-      <button
-        type="button"
-        class="text-sm text-gray-900 underline underline-offset-4 p-4"
-      >
-        Reset
-      </button>
     </div>
   </details>
+
+  <summary
+    class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600"
+  >
+    <span class="text-sm font-medium" (click)="resetFilters()"> Resetear</span>
+  </summary>
 </section>

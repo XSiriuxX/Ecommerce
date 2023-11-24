@@ -5,52 +5,53 @@ import { Product } from '../models/product.model';
   providedIn: 'root',
 })
 export class FiltersService {
-  products: Product[] = [];
-  private selectedFilters: any = {};
+  copyProducts: Product[] = [];
   filtersChanged: EventEmitter<void> = new EventEmitter<void>();
 
   constructor() {}
 
-  setProducts(products: Product[]): void {
-    this.products = this.filterAndSortProducts();
-    console.log(this.products);
+  getAllProducts(products: Product[]) {
+    this.copyProducts = products;
   }
 
-  setSelectedFilters(filters: any): void {
-    this.selectedFilters = filters;
-    console.log(filters);
-  }
-
-  getSelectedFilters(): any {
-    return this.selectedFilters;
-  }
-
-  getAllProducts(): Product[] {
-    return this.products;
-  }
-
-  filterAndSortProducts(): any[] {
-    const { categories, minPrice, maxPrice, sortBy, ascending } =
-      this.selectedFilters;
-
+  filterAndSortProducts(
+    categories: any,
+    minPrice: number,
+    maxPrice: number,
+    sortBy: string,
+    ascending: boolean
+  ): any[] {
     // Aplicar filtros y ordenamiento usando this.selectedFilters
-    let filteredProducts = this.products;
+    let filteredProducts = [...this.copyProducts];
 
-    if (categories && categories.length > 0) {
+    if (
+      categories.length == 0 &&
+      minPrice == 0 &&
+      maxPrice == 0 &&
+      sortBy == ''
+    ) {
+      return filteredProducts;
+    }
+
+    if (categories.length > 0) {
+      console.log(categories);
+
       filteredProducts = filteredProducts.filter((product) =>
         categories.some((category: any) =>
           product.categories.includes(category)
         )
       );
+    } else {
+      filteredProducts = [...this.copyProducts];
     }
 
-    if (!isNaN(minPrice)) {
+    if (minPrice !== 0) {
       filteredProducts = filteredProducts.filter(
         (product) => product.productPrice >= minPrice
       );
     }
 
-    if (!isNaN(maxPrice)) {
+    if (maxPrice !== 0) {
       filteredProducts = filteredProducts.filter(
         (product) => product.productPrice <= maxPrice
       );
@@ -67,10 +68,16 @@ export class FiltersService {
           ascending
         );
         break;
-      // Puedes agregar más casos según sea necesario
     }
 
     return filteredProducts;
+  }
+
+  searchProductsByName(searchTerm: string): Product[] {
+    let products = [...this.copyProducts];
+    return products.filter((product) =>
+      product.productName.toLowerCase().includes(searchTerm.toLowerCase())
+    );
   }
 
   private sortProductsByName(

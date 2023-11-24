@@ -9,8 +9,16 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./products.component.css'],
 })
 export class ProductsComponent {
+  originalProducts: Product[] = [];
   products: Product[] = [];
-  filteredProducts: any[] = [];
+
+  searchTerm: string = '';
+
+  selectedCategories: string[] = [];
+  minPrice: number = 0;
+  maxPrice: number = 0;
+  sortBy: string = '';
+  ascending: boolean = false;
 
   constructor(
     public productService: ProductService,
@@ -23,8 +31,37 @@ export class ProductsComponent {
 
   getProducts() {
     this.productService.getAllProducts().subscribe((res: Product[]) => {
-      this.products = res;
-      console.log(res);
+      this.originalProducts = res;
+      this.applyFilters();
     });
+  }
+
+  searchByName() {
+    this.products = this.filtersService.searchProductsByName(this.searchTerm);
+    console.log(this.products);
+  }
+
+  applyFilters() {
+    this.filtersService.getAllProducts(this.originalProducts);
+
+    this.products = this.filtersService.filterAndSortProducts(
+      this.selectedCategories,
+      this.minPrice,
+      this.maxPrice,
+      this.sortBy,
+      this.ascending
+    );
+  }
+
+  onFiltersApplied(event: any) {
+    this.selectedCategories = event.selectedCategories;
+    this.minPrice = event.minPrice;
+    this.maxPrice = event.maxPrice;
+    this.sortBy = event.sortBy;
+    this.ascending = event.ascending;
+
+    this.filtersService.getAllProducts(this.products);
+
+    this.applyFilters();
   }
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { max } from 'rxjs';
 import { CategoryService } from 'src/app/services/category.service';
 import { FiltersService } from 'src/app/services/filters.service';
 
@@ -9,9 +10,12 @@ import { FiltersService } from 'src/app/services/filters.service';
 })
 export class FiltersComponent {
   categories: any[] = [];
-  selectedCategories: string[] = [];
-  minPrice: number = 0;
-  maxPrice: number = 0;
+  @Input() selectedCategories: string[] = [];
+  @Input() minPrice: number = 0;
+  @Input() maxPrice: number = 0;
+  @Input() sortBy: string = '';
+  @Input() ascending: boolean = false;
+  @Output() filtersApplied: EventEmitter<any> = new EventEmitter();
 
   constructor(
     public categoryService: CategoryService,
@@ -37,18 +41,27 @@ export class FiltersComponent {
       .filter((category) => category.selected)
       .map((category) => category.categoryName);
 
-    this.filtersService.setSelectedFilters({
-      categories: this.selectedCategories,
+    this.filtersApplied.emit({
+      selectedCategories: this.selectedCategories,
       minPrice: this.minPrice,
       maxPrice: this.maxPrice,
+      sortBy: this.sortBy,
+      ascending: this.ascending,
     });
+  }
 
-    // Obtener los productos filtrados del servicio y actualizar la vista
-    this.filtersService.filterAndSortProducts();
+  setSorting(sortby: string, ascending: boolean) {
+    this.sortBy = sortby;
+    this.ascending = ascending;
+    this.applyFilters();
   }
 
   resetFilters() {
     this.categories.forEach((category) => (category.selected = false));
+    this.minPrice = 0;
+    this.maxPrice = 0;
+    this.sortBy = '';
+    this.ascending = false;
     this.applyFilters();
   }
 }
