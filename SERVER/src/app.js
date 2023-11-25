@@ -6,6 +6,7 @@ const {
   userRoutes,
   productRoutes,
   categoryRoutes,
+  paymentRoutes,
 } = require("./routes/allroutes");
 
 const app = express();
@@ -20,5 +21,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/user", userRoutes);
 app.use("/product", productRoutes);
 app.use("/category", categoryRoutes);
+app.use("/payments", paymentRoutes);
 
 module.exports = app;

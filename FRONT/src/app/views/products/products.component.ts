@@ -38,7 +38,6 @@ export class ProductsComponent {
 
   searchByName() {
     this.products = this.filtersService.searchProductsByName(this.searchTerm);
-    console.log(this.products);
   }
 
   applyFilters() {

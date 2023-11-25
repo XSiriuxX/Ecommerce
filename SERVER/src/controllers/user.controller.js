@@ -142,7 +142,7 @@ user.addToCart = async (req, res) => {
         .status(404)
         .json({ message: "Usuario o producto no encontrado" });
     }
-    console.log("aqui");
+
     const existingProduct = user.cart.find((item) =>
       item.productId.equals(productId)
     );
@@ -179,7 +179,6 @@ user.getCart = async (req, res) => {
     const cartDetails = await Promise.all(
       user.cart.map(async (cartItem) => {
         const product = await Product.findById(cartItem.productId);
-        console.log(product);
 
         return {
           productId: cartItem.productId,

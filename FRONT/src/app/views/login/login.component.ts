@@ -19,7 +19,6 @@ export class LoginComponent {
     } else {
       this.authService.logIn(form.value).subscribe(
         (res) => {
-          console.log('logueado');
           form.reset();
           this.router.navigate(['/']);
         },

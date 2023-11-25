@@ -22,7 +22,6 @@ export class RegisterComponent {
       alert('Fill in all the fields.');
     } else {
       this.authService.register(form.value).subscribe((res) => {
-        console.log('registrado');
         form.reset();
         this.router.navigate(['/']);
       });

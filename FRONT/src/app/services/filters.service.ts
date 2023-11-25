@@ -34,8 +34,6 @@ export class FiltersService {
     }
 
     if (categories.length > 0) {
-      console.log(categories);
-
       filteredProducts = filteredProducts.filter((product) =>
         categories.some((category: any) =>
           product.categories.includes(category)

@@ -1,6 +1,9 @@
 import { Component, SimpleChanges } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { CartService } from 'src/app/services/cart.service';
+import { PaymentsService } from 'src/app/services/payments.service';
+import { Order } from 'src/app/models/order.model';
 
 @Component({
   selector: 'app-cart',
@@ -26,7 +29,7 @@ export class CartComponent {
 
   constructor(
     private cartService: CartService,
-    private route: ActivatedRoute
+    private paymentsService: PaymentsService
   ) {}
 
   ngOnInit() {
@@ -77,8 +80,6 @@ export class CartComponent {
       quantity: quantity,
     };
 
-    console.log(this.updatedProduct);
-
     this.cartService
       .deleteProduct(this.updatedProduct)
       .subscribe((res) => this.getProductsCart());
@@ -94,5 +95,24 @@ export class CartComponent {
     this.cartService
       .addProduct(this.updatedProduct)
       .subscribe((res) => this.getProductsCart());
+  }
+
+  createOrder() {
+    const orders: Order[] = this.cart.map((product): Order => {
+      return {
+        title: product.name,
+        unit_price: product.productPrice,
+        currency_id: 'PEN',
+        quantity: product.quantity,
+      };
+    });
+
+    this.paymentsService.createOrder(orders).subscribe((res: any) => {
+      window.location.href = res.init_point;
+      console.log(res);
+    });
+    (err: any) => {
+      console.log(err);
+    };
   }
 }
