@@ -98,21 +98,27 @@ export class CartComponent {
   }
 
   createOrder() {
-    const orders: Order[] = this.cart.map((product): Order => {
+    const productsList: Order[] = this.cart.map((product): Order => {
       return {
+        id: product.productId,
         title: product.name,
         unit_price: product.productPrice,
         currency_id: 'PEN',
         quantity: product.quantity,
+        description: product.description,
+        picture_url: product.productImage,
       };
     });
 
-    this.paymentsService.createOrder(orders).subscribe((res: any) => {
-      window.location.href = res.init_point;
-      console.log(res);
-    });
-    (err: any) => {
-      console.log(err);
-    };
+    const order = { user_id: this.userId, items: productsList };
+    this.paymentsService.createOrder(order).subscribe(
+      (res) => {
+        console.log('Orden creada con éxito', res);
+        window.location.href = res.payment_url;
+      },
+      (err) => {
+        console.error('Error al crear la orden', err);
+      }
+    );
   }
 }

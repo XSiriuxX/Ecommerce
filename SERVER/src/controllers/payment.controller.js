@@ -1,3 +1,6 @@
+const User = require("../models/User.model");
+const Order = require("../models/Order.model");
+const Product = require("../models/Product.model");
 const mercadopago = require("mercadopago");
 const payment = {};
 require("dotenv").config();
@@ -7,33 +10,77 @@ payment.createOrder = async (req, res) => {
     access_token: process.env.MERCADOPAGO_TOKEN,
   });
 
-  const result = await mercadopago.preferences.create({
-    items: req.body,
-    back_urls: {
-      success: `${process.env.HOST}/payments/success`,
-      failure: `${process.env.HOST}/payments/failure`,
-      pending: `${process.env.HOST}/payments/pending`,
-    },
-    notification_url: "https://19bf-190-237-16-205.ngrok.io/payments/webhook",
-  });
+  try {
+    const result = await mercadopago.preferences.create({
+      items: req.body.items,
+      back_urls: {
+        success: `${process.env.FRONT}/cart`,
+        failure: `${process.env.FRONT}/cart`,
+        pending: ``,
+      },
+      payer: {
+        name: req.body.user_id,
+      },
+      notification_url: "https://8f96-190-237-16-205.ngrok.io/payments/webhook",
+    });
 
-  res.status(200).json(result.body);
+    res.status(200).json({ payment_url: result.body.init_point });
+  } catch (error) {
+    res.status(500).json({ error: "Error al crear la orden de pago" });
+  }
 };
 
 payment.recieveWebhook = async (req, res) => {
-  const payment = req.query;
+  const payment = req.body;
 
   try {
     if (payment.type === "payment") {
-      const response = await mercadopago.payment.findById(payment["data.id"]);
+      const response = await mercadopago.payment.findById(payment.data["id"]);
+
+      await createOrder(response.body.additional_info);
     }
     res.status(200).json("Todo bien");
   } catch (error) {
     console.log(error);
+    res.status(500).json({ error: "Error al procesar el webhook" });
   }
 };
 
+async function createOrder(paymentDetails) {
+  const productList = paymentDetails.items.map((item) => {
+    return {
+      _id: item.id,
+      productName: item.title,
+      quantity: item.quantity,
+      price: item.unit_price,
+      productImage: item.picture_url,
+      description: item.description,
+    };
+  });
+
+  const newOrder = new Order({
+    productList,
+    purchaseDate: new Date(),
+    orderStatus: "Finalizado",
+    billingInfo: paymentDetails.payer.first_name,
+  });
+
+  await User.findByIdAndUpdate(paymentDetails.payer.first_name, {
+    $set: { cart: [] },
+  });
+
+  await newOrder.save();
+}
+
 payment.success = async (req, res) => {
+  try {
+    res.status(200).json("success");
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
+payment.failure = async (req, res) => {
   res.status(200).json("success");
 };
 

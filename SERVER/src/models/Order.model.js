@@ -3,10 +3,12 @@ const { Schema, model } = require("mongoose");
 const orderSchema = new Schema({
   productList: [
     {
-      product: { type: Schema.Types.ObjectId, ref: "Product" },
+      _id: { type: Schema.Types.ObjectId, ref: "Product" },
       quantity: Number,
       price: Number,
       productName: String,
+      description: String,
+      productImage: String,
     },
   ],
   purchaseDate: Date,
