@@ -21,7 +21,7 @@ payment.createOrder = async (req, res) => {
       payer: {
         name: req.body.user_id,
       },
-      notification_url: "https://8f96-190-237-16-205.ngrok.io/payments/webhook",
+      notification_url: `${process.env.HOST}/payments/webhook`,
     });
 
     res.status(200).json({ payment_url: result.body.init_point });
