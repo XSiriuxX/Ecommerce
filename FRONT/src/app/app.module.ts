@@ -25,6 +25,9 @@ import { UserpopupComponent } from './userpopup/userpopup.component';
 import { CartService } from './services/cart.service';
 import { FiltersComponent } from './components/filters/filters.component';
 
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +46,24 @@ import { FiltersComponent } from './components/filters/filters.component';
     UserpopupComponent,
     FiltersComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    provideFirebaseApp(() =>
+      initializeApp({
+        projectId: 'he-ecommerce-1166b',
+        appId: '1:652912128797:web:29717a09bee40a24bb67f4',
+        storageBucket: 'he-ecommerce-1166b.appspot.com',
+        apiKey: 'AIzaSyDwiulyzWYAPyW9c1DDRmeipzBUJerXin4',
+        authDomain: 'he-ecommerce-1166b.firebaseapp.com',
+        messagingSenderId: '652912128797',
+        measurementId: 'G-TFV61DQGEC',
+      })
+    ),
+    provideAuth(() => getAuth()),
+  ],
   providers: [AuthService, ProductService, DarkModeService, CartService],
   bootstrap: [AppComponent],
 })

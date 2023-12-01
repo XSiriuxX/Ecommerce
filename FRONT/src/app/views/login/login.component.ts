@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Provider } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -26,6 +26,36 @@ export class LoginComponent {
           console.log(err.message);
         }
       );
+    }
+  }
+
+  providerAction(provider: string): void {
+    console.log(provider);
+
+    if (provider === 'google') {
+      this.singUpWithGoogle();
+    } else {
+      this.singUpWithFacebook();
+    }
+  }
+
+  async singUpWithGoogle(): Promise<void> {
+    try {
+      const result = await this.authService.signInGoogle();
+      this.router.navigateByUrl('/');
+      console.log(result);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async singUpWithFacebook(): Promise<void> {
+    try {
+      const result = await this.authService.signInFacebook();
+      this.router.navigateByUrl('/');
+      console.log(result);
+    } catch (error) {
+      console.log(error);
     }
   }
 }
