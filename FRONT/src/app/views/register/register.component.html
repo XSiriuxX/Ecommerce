@@ -83,23 +83,65 @@
             required
           />
         </div>
-        <button
-          type="submit"
-          class="block w-full bg-indigo-600 mt-5 py-2 rounded-2xl hover:bg-indigo-700 hover:-translate-y-1 transition-all duration-500 text-white font-semibold mb-2"
-        >
-          Register
-        </button>
-        <div class="flex justify-between mt-4">
+
+        <div class="flex justify-between mb-8">
           <span
             class="text-sm ml-2 hover:text-blue-500 cursor-pointer hover:-translate-y-1 duration-500 transition-all"
-            >Forgot Password ?</span
-          >
+            >Olvidaste tu contraseña?
+          </span>
 
           <a
             href="/login"
             class="text-sm ml-2 hover:text-blue-500 cursor-pointer hover:-translate-y-1 duration-500 transition-all"
-            >Already have an account?</a
+            >Ya tienes cuenta?</a
           >
+        </div>
+
+        <div class="grid gap-y-3 text-white font-semibold">
+          <button
+            type="submit"
+            class="block w-full bg-indigo-600 py-2 rounded-2xl hover:bg-indigo-700 hover:-translate-y-1 transition-all duration-500"
+          >
+            Register
+          </button>
+          <button
+            (click)="providerAction('facebook')"
+            type="button"
+            class="flex items-center justify-center gap-x-2 py-2 rounded-2xl bg-[#3b5998] hover:-translate-y-1 transition-all duration-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="fill: rgb(255, 255, 255)"
+              data-darkreader-inline-fill=""
+            >
+              <path
+                d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
+              ></path>
+            </svg>
+            Sign up with Facebook
+          </button>
+          <button
+            (click)="providerAction('google')"
+            type="button"
+            class="flex items-center justify-center gap-x-2 py-2 rounded-2xl bg-[#db4a39] hover:-translate-y-1 transition-all duration-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="fill: rgb(255, 255, 255)"
+              data-darkreader-inline-fill=""
+            >
+              <path
+                d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z"
+              ></path>
+            </svg>
+            Sign up with Google
+          </button>
         </div>
       </form>
     </div>

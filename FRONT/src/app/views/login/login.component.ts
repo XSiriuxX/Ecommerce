@@ -17,42 +17,59 @@ export class LoginComponent {
     if (form.value.email === '' || form.value.password === '') {
       alert('Fill in all the fields.');
     } else {
-      this.authService.logIn(form.value).subscribe(
-        (res) => {
-          form.reset();
-          this.router.navigate(['/']);
-        },
-        (err) => {
-          console.log(err.message);
-        }
-      );
+      this.authService.logInEmailandPassword(form.value).then(() => {
+        this.authService.logIn(form.value).subscribe(
+          (res) => {
+            form.reset();
+            this.router.navigate(['/']);
+          },
+          (err) => {
+            console.log(err.message);
+          }
+        );
+      });
     }
   }
 
   providerAction(provider: string): void {
-    console.log(provider);
-
     if (provider === 'google') {
-      this.singUpWithGoogle();
+      this.logInWithGoogle();
     } else {
-      this.singUpWithFacebook();
+      this.logInWithFacebook();
     }
   }
 
-  async singUpWithGoogle(): Promise<void> {
+  async logInWithGoogle(): Promise<void> {
     try {
       const result = await this.authService.signInGoogle();
-      this.router.navigateByUrl('/');
-      console.log(result);
+
+      if (!result.user.email) {
+        alert('Algo malio sal.');
+      } else {
+        let user = {
+          email: result.user.email,
+          password: result.user.email,
+        };
+
+        this.authService.logIn(user).subscribe(
+          (res) => {
+            this.router.navigate(['/']);
+          },
+          (err) => {
+            alert('Algo malio sal.');
+            console.log(err.message);
+          }
+        );
+      }
     } catch (error) {
       console.log(error);
     }
   }
 
-  async singUpWithFacebook(): Promise<void> {
+  async logInWithFacebook(): Promise<void> {
     try {
       const result = await this.authService.signInFacebook();
-      this.router.navigateByUrl('/');
+      // this.router.navigateByUrl('/');
       console.log(result);
     } catch (error) {
       console.log(error);

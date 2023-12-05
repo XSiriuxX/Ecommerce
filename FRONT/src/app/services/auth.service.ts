@@ -28,10 +28,9 @@ export class AuthService {
   private auth: Auth = inject(Auth);
 
   readonly authState$ = authState(this.auth);
+  constructor(private http: HttpClient) {}
 
-  private signUpEmailandPassword(
-    credential: Credential
-  ): Promise<UserCredential> {
+  signUpEmailandPassword(credential: Credential): Promise<UserCredential> {
     return createUserWithEmailAndPassword(
       this.auth,
       credential.email,
@@ -39,7 +38,7 @@ export class AuthService {
     );
   }
 
-  private logInEmailandPassword(credential: Credential) {
+  logInEmailandPassword(credential: Credential) {
     return signInWithEmailAndPassword(
       this.auth,
       credential.email,
@@ -48,7 +47,6 @@ export class AuthService {
   }
 
   //providers
-
   signInGoogle(): Promise<UserCredential> {
     const provider = new GoogleAuthProvider();
     return this.callPopUp(provider);
@@ -60,24 +58,15 @@ export class AuthService {
   }
 
   async callPopUp(provider: AuthProvider): Promise<UserCredential> {
-    console.log(provider);
-
     try {
-      const result = await signInWithPopup(this.auth, provider);
-
-      return result;
+      return await signInWithPopup(this.auth, provider);
     } catch (error: any) {
       console.log(error);
-
       return error;
     }
   }
 
-  constructor(private http: HttpClient) {}
-
-  register(user: User): Observable<JwtResponse> {
-    this.signUpEmailandPassword(user);
-
+  register(user: any): Observable<JwtResponse> {
     return this.http.post<JwtResponse>(`${this.API_URL}/register`, user).pipe(
       tap((res) => {
         this.saveToken(res.accessToken, res.expiresIn, res.id);
@@ -85,10 +74,7 @@ export class AuthService {
     );
   }
 
-  logIn(user: User): Observable<JwtResponse> {
-    const res = this.logInEmailandPassword(user);
-    console.log(res);
-
+  logIn(user: any): Observable<JwtResponse> {
     return this.http.post<JwtResponse>(`${this.API_URL}/login`, user).pipe(
       tap((res) => {
         this.saveToken(res.accessToken, res.expiresIn, res.id);
