@@ -6,6 +6,7 @@ const SECRET_KEY = "secretkey123";
 const User = require("../models/User.model");
 const Order = require("../models/Order.model");
 const Product = require("../models/Product.model");
+const sendMail = require("./sendmail.extra");
 
 const user = {};
 
@@ -15,6 +16,11 @@ user.getusers = async (req, res) => {
   try {
     const users = await User.find();
     res.status(200).json(users);
+    await sendMail({
+      mail: "giovanni.cespedes.22@gmail.com",
+      subject: "Prueba",
+      message: "<h1>Holii</h1>",
+    });
   } catch (error) {
     res.status(500).json({ message: "Error interno del servidor" });
   }
