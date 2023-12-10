@@ -16,11 +16,6 @@ user.getusers = async (req, res) => {
   try {
     const users = await User.find();
     res.status(200).json(users);
-    await sendMail({
-      mail: "giovanni.cespedes.22@gmail.com",
-      subject: "Prueba",
-      message: "<h1>Holii</h1>",
-    });
   } catch (error) {
     res.status(500).json({ message: "Error interno del servidor" });
   }
@@ -65,6 +60,11 @@ user.createuser = async (req, res) => {
       const expiresIn = 24 * 60 * 60;
       const accessToken = jwt.sign({ id: user._id }, SECRET_KEY, { expiresIn });
 
+      await sendMail({
+        mail: user.email,
+        message: "register",
+      });
+
       res.status(203).json({ username, id: user._id, accessToken, expiresIn });
     } else {
       res.status(500).json({ message: "No se pudo crear el usuario" });
@@ -98,6 +98,11 @@ user.loginuser = async (req, res) => {
       const expiresIn = 24 * 60 * 60;
       const accessToken = jwt.sign({ id: user._id }, SECRET_KEY, { expiresIn });
 
+      await sendMail({
+        mail: user.email,
+        message: "login",
+      });
+
       res.status(200).json({ id: user._id, accessToken, expiresIn });
     } else {
       res.status(401).json({ message: "Contraseña incorrecta" });
@@ -123,6 +128,11 @@ user.resetPassword = async (req, res) => {
 
     user.password = await bcrypt.hash(newPassword, 10);
     await user.save();
+
+    await sendMail({
+      mail: user.email,
+      message: "forgot-password",
+    });
 
     res.status(200).json({ message: "Contraseña actualizada" });
   } catch (error) {
